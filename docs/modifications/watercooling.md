@@ -30,7 +30,6 @@ FormulaMod lists the kit with **120 mm**, **240 mm**, and **360 mm** radiators (
 
 Some listings also show a thicker **360 mm** dual-card row SKU. Confirm the SKU text on FormulaMod before you pay.
 
-![Bykski N-TESLA-A100-40G-SR / X-V2 full-cover block for A100 40GB / A30 / CMP 170HX](../assets/watercooling/bykski-block-v2.jpg)
 
 For a **custom loop** (your own pump / rad / fittings), the community-validated cold plate is still Bykski **N-TESLA-A100-X-V2** (newer stock may show as **N-TESLA-A100-40G-SR**). Do **not** buy the **80G** A100 block or the older non-V2 acrylic revision. Block-only listing: [FormulaMod N-TESLA-A100-X-V2](https://www.formulamod.com/Bykski-GPU-Block-For-Nvidia-Tesla-A100-40GB-Nvidia-CMP-170HX-Nvidia-Tesla-A30-24G-High-Heat-Resistance-Material-POM-Full-Metal-Construction-With-Backplate-Full-Cover-GPU-Water-Cooling-Cooler-Radiator-Block-N-TESLA-A100-X-V2-p3765067.html).
 
