@@ -69,7 +69,7 @@ There is a **240 mm** kit sold as a **Corsair-style CPU AIO adapted** onto an A1
 
 - [AliExpress listing](https://www.aliexpress.com/item/1005012990720684.html)
 
-*No redistributable product photo found outside AliExpress (listing is captcha-walled from here). Use the link above for gallery shots.*
+![Corsair-adapted 240mm AIO on CMP 170HX / A100 waterblock](../assets/watercooling/corsair-adapted-aio-240.jpg)
 
 Treat this as a **240 mm** thermal budget (same caution as the Bykski 240 mm row above). Verify seller photos against your PCB, check pump / fitting quality, and log temps under unlock-level load before you trust it overnight.
 
