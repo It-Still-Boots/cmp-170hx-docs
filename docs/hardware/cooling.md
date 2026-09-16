@@ -17,7 +17,7 @@ Sources: [Watercooling Installation](https://170th-street.gitbook.io/hx/modifica
 !!! danger "Thermal runaway"
     GA100 leakage rises with temperature. 170th Street’s watercooling guide warns that dry-running without coolant is a short experiment only: shut down within about five minutes, and treat temperatures above ~80 °C as an emergency stop.
 
-## Path A: Forced air on the stock sink
+## Path A: Forced air through the stock heatsink
 
 Use this for bring-up and light unlock verification.
 
