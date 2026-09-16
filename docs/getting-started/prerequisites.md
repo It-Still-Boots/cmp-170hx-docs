@@ -55,7 +55,7 @@ Pick one path before first CUDA burn-in:
 !!! danger "Thermal pads on empty footprints"
     Every unpopulated IC footprint under the waterblock pillars needs a thermal pad. Bare copper under metal pillars shorts and kills boards. This is the most common waterblock brick mode called out in 170th Street’s watercooling guide.
 
-[Cooling →](../hardware/cooling.md)
+[Air Cooling →](../hardware/air-cooling.md) · [Water Cooling →](../hardware/water-cooling.md)
 
 ### Tools for optional mods
 

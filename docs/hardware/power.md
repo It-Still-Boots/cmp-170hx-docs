@@ -25,7 +25,7 @@ Plan continuous budget as:
 PSU_12V_budget >= (GPU_300W_ceiling + CPU + drives + fans) * 1.2
 ```
 
-Practical floors It Still Boots uses when shopping used PSUs:
+Practical floors when shopping used PSUs:
 
 | Host class | Suggested 12 V headroom |
 |------------|-------------------------|
@@ -36,7 +36,7 @@ Practical floors It Still Boots uses when shopping used PSUs:
 Idle is friendly (~30–40 W on the GPU). Sustained unlocked FP32 / LLM decode is where the 250–300 W band shows up. Meter the wall once during a long generate job and write the number next to your Performance entry.
 
 !!! tip "Software limit vs heatsink"
-    Raising the power limit toward **300 W** without proving cooling first is how you meet the thermal runaway warning on [Cooling](cooling.md). Leave the limit at default until temperatures are boring.
+    Raising the power limit toward **300 W** without proving cooling first is how you meet the thermal runaway warning on [Air Cooling](air-cooling.md) / [Water Cooling](water-cooling.md). Leave the limit at default until temperatures are boring.
 
 ## Cabling checklist
 
@@ -62,7 +62,8 @@ Each additional 170HX adds another ~250–300 W planning chunk and another EPS f
 ## Related pages
 
 - [Specifications](specifications.md)
-- [Cooling](cooling.md)
+- [Air Cooling](air-cooling.md)
+- [Water Cooling](water-cooling.md)
 - [Prerequisites](../getting-started/prerequisites.md)
 - [Quick Start](../getting-started/quick-start.md)
 

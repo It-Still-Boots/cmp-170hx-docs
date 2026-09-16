@@ -1,6 +1,6 @@
 # Unlock Overview
 
-How It Still Boots brings a stock CMP 170HX to unlocked HBM and usable SM throughput on Linux. This page is the lab runbook. Mechanism detail (Falcon, Booter, ROP chain, register tables) lives on the [Consensus-Protocol/cmp170hx wiki](https://github.com/Consensus-Protocol/cmp170hx/wiki). We do not rewrite that bible here.
+Lab runbook for taking a stock CMP 170HX to unlocked HBM and usable SM throughput on Linux. Mechanism detail (Falcon, Booter, ROP chain, register tables) lives on the [Consensus-Protocol/cmp170hx wiki](https://github.com/Consensus-Protocol/cmp170hx/wiki). This hub does not rewrite that bible here.
 
 Canonical installer: [amoghmunikote/cmpunlocker](https://github.com/amoghmunikote/cmpunlocker). Related fork with extra P2P work: [bayley/cmpunlocker](https://github.com/bayley/cmpunlocker).
 
@@ -28,14 +28,14 @@ Check the cmpunlocker README for the current supported range before you install.
 
 ## Order of operations
 
-1. **Cool the card** (forced air on the passive sink, or a filled water loop). See [Cooling](../hardware/cooling.md).
+1. **Cool the card** (forced air on the passive sink, or a filled water loop). See [Air Cooling](../hardware/air-cooling.md) / [Water Cooling](../hardware/water-cooling.md).
 2. **Confirm stock identity** with `lspci` / `nvidia-smi`: device `20c2` or `2082`, Gen1 x4, 8192 or 10240 MiB.
 3. **Host BIOS**: Above 4G on, Secure Boot off. [Host BIOS](../bios/host-bios.md).
 4. **Install and pin nvidia-open 610.43.02/03** plus matching headers.
 5. **Run cmpunlocker** (`install.sh`, with `--profile=8gb` or `--profile=10gb` when you need to force geometry).
 6. **Cold reboot** (full power off, then boot).
 7. **Verify** MiB and link speed (below).
-8. Only then chase optional hardware: [capacitor mod](../modifications/pcie-capacitor-mod.md), [watercooling](../modifications/watercooling.md).
+8. Only then chase optional hardware: [capacitor mod](../modifications/pcie-capacitor-mod.md), [Water Cooling](../hardware/water-cooling.md).
 
 ## Install sketch
 
@@ -74,7 +74,7 @@ Optional short CUDA/OpenCL FP32 probe should leave the ~0.4 TFLOPS stock FMA cla
 
 ## What we deliberately omit
 
-Falcon privilege masks, Booter PLM sequences, ROP gadget layout, and per-register write tables belong on the [Consensus-Protocol wiki](https://github.com/Consensus-Protocol/cmp170hx/wiki). Start at Unlock → How it works / Falcon and the Booter if you need that depth. It Still Boots documents what we run and how we verify it.
+Falcon privilege masks, Booter PLM sequences, ROP gadget layout, and per-register write tables belong on the [Consensus-Protocol wiki](https://github.com/Consensus-Protocol/cmp170hx/wiki). Start at Unlock → How it works / Falcon and the Booter if you need that depth. This page covers what the lab runbook runs and how to verify it.
 
 ## Related pages
 

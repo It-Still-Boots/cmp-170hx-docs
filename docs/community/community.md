@@ -1,6 +1,6 @@
 # Community
 
-It Still Boots documents what we run in the lab: unlocked CMP 170HX boxes, cooling and power notes, and the numbers we publish under [Performance](../performance/overview.md). The reverse engineering, unlock tooling, and board-level mods came from other people. Use this page to find them, ask questions where they already hang out, and contribute fixes back to these docs.
+Upstream reverse engineering, unlock tooling, and board-level mods came from other people. Use this page to find them, ask questions where they already hang out, and contribute fixes back to these docs. Lab numbers live under [Performance](../performance/overview.md).
 
 Ask questions where the upstream projects already hang out, or open a GitHub issue / PR on this repo.
 
@@ -21,7 +21,7 @@ Ask questions where the upstream projects already hang out, or open a GitHub iss
 2. Edit Markdown under `docs/`. Keep the lab-note voice: concrete numbers, full sentences, no marketing filler.
 3. Run `mkdocs build --strict` locally before you open a PR.
 4. Attribute upstream when you paraphrase 170th Street, cmpunlocker, or the Consensus wiki. Do not paste walls of GitBook.
-5. If It Still Boots has not verified a step, say so and link the upstream procedure.
+5. If a step is not verified in these docs, say so and link the upstream procedure.
 
 Useful PRs: BIOS menu paths for specific boards, verified `LnkSta` before/after caps, cooling photos with temperatures, and corrections when a driver pin or part number moves.
 

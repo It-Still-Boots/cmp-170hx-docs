@@ -1,6 +1,6 @@
 # Teardown
 
-Summary of what a CMP 170HX teardown involves, with deep links to the step-by-step on 170th Street. It Still Boots is **not** inventing screw counts or motion paths beyond what that guide documents.
+Summary of what a CMP 170HX teardown involves, with deep links to the step-by-step on 170th Street. This page does **not** invent screw counts or motion paths beyond what that guide documents.
 
 **Canonical procedure:** [170th Street Teardown Guide](https://170th-street.gitbook.io/hx/hardware/teardown-guide) · mirror notes in [amoghmunikote/170th-Street](https://github.com/amoghmunikote/170th-Street)
 
@@ -45,19 +45,19 @@ For torque sense, photos, and the video embeds, use the [canonical Teardown Guid
 
 | Next goal | Go here |
 |-----------|---------|
-| Waterblock | [Cooling summary](cooling.md) → [Watercooling](../modifications/watercooling.md) → [170th Street watercooling](https://170th-street.gitbook.io/hx/modifications/watercooling-installation) |
+| Waterblock | [Water Cooling](water-cooling.md) → [170th Street watercooling](https://170th-street.gitbook.io/hx/modifications/watercooling-installation) |
 | Lane caps | [PCIe capacitor mod](../modifications/pcie-capacitor-mod.md) → [170th Street mod page](https://170th-street.gitbook.io/hx/modifications/pcie-capacitor-mod) / [GitHub mod doc](https://github.com/amoghmunikote/170th-Street/blob/master/modifications/pcie-capacitor-mod.md) |
 | Reassemble air cooler | Reverse the guide; renew paste; confirm spring washers return to the original screws |
 
 !!! danger "Waterblock pad reminder"
-    Empty IC footprints under block pillars need thermal pads before the block seats. See [Cooling](cooling.md).
+    Empty IC footprints under block pillars need thermal pads before the block seats. See [Water Cooling](water-cooling.md).
 
 ## Related pages
 
-- [Cooling](cooling.md)
+- [Air Cooling](air-cooling.md)
+- [Water Cooling](water-cooling.md)
 - [Specifications](specifications.md)
 - [PCIe capacitor mod](../modifications/pcie-capacitor-mod.md)
-- [Watercooling](../modifications/watercooling.md)
 
 ## References
 

@@ -115,12 +115,12 @@ nav:
   - Hardware:
       - Specifications: hardware/specifications.md
       - Power: hardware/power.md
-      - Cooling: hardware/cooling.md
+      - Air Cooling: hardware/air-cooling.md
+      - Water Cooling: hardware/water-cooling.md
       - Teardown: hardware/teardown.md
 
   - Modifications:
       - PCIe Capacitor Mod: modifications/pcie-capacitor-mod.md
-      - Watercooling: modifications/watercooling.md
 
   - BIOS & Host:
       - Host BIOS: bios/host-bios.md

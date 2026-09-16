@@ -23,7 +23,7 @@ Two production SKUs show up in the wild:
 
 Community unlock tooling ([cmpunlocker](https://github.com/amoghmunikote/cmpunlocker)) restores memory geometry, lifts the FP32 FMA throttle, and enables PCIe Gen2 in software. Hardware lane width still needs the [PCIe capacitor mod](modifications/pcie-capacitor-mod.md) if you want Gen1 x16 (~4 GB/s) instead of stock Gen1 x4 (~1 GB/s).
 
-It Still Boots lab headline (unlocked 64 GiB): Nemotron-3.5-Lightning-30B-A3B W4A16 at **228 tok/s** (16k coding), batch **1,306 tok/s** aggregate at 32k×16, and **79%** decode retained at 128k versus 1k. Earlier Qwen3.8-27B DFlash ~212 tok/s is still in the matrix. Full tables: [Performance Overview](performance/overview.md).
+Lab headline (unlocked 64 GiB): Nemotron-3.5-Lightning-30B-A3B W4A16 at **228 tok/s** (16k coding), batch **1,306 tok/s** aggregate at 32k×16, and **79%** decode retained at 128k versus 1k. Earlier Qwen3.8-27B DFlash ~212 tok/s is still in the matrix. Full tables: [Performance Overview](performance/overview.md).
 
 Primary community sources: [170th Street](https://170th-street.gitbook.io/hx) and the [170th-Street GitHub mirror](https://github.com/amoghmunikote/170th-Street). Deep unlock reference: [Consensus-Protocol/cmp170hx](https://github.com/Consensus-Protocol/cmp170hx/wiki).
 
@@ -33,7 +33,7 @@ Primary community sources: [170th Street](https://170th-street.gitbook.io/hx) an
 - **Memory:** HBM2e; stock 8 GB or 10 GB; unlocked **64 GB** (8 GB SKU) or **40 GB** (10 GB SKU)
 - **Stock PCIe:** Gen1 x4 (~1 GB/s) via firmware Gen lock plus missing AC coupling caps on 12 of 16 lanes
 - **Power:** 1× 8-pin CPU/EPS-style connector via adapter
-- **Cooling:** Passive server heatsink; needs strong airflow or water
+- **Cooling:** Passive server heatsink; needs strong [airflow](hardware/air-cooling.md) or [water](hardware/water-cooling.md)
 - **APIs:** CUDA CC 8.0, OpenCL; no DX / Vulkan / OpenGL / NVENC
 - **NVLink:** Connectors present, fuse-disabled
 - **Resizable BAR:** Present, limited to **64 MiB** stock
@@ -61,7 +61,7 @@ Primary community sources: [170th Street](https://170th-street.gitbook.io/hx) an
 
     ---
 
-    Specs tables, power connector reality, cooling options, and a teardown summary with deep links to 170th Street.
+    Specs tables, power connector reality, air and water cooling, and a teardown summary with deep links to 170th Street.
 
     [:octicons-arrow-right-24: Hardware Guide](hardware/specifications.md)
 
@@ -69,7 +69,7 @@ Primary community sources: [170th Street](https://170th-street.gitbook.io/hx) an
 
     ---
 
-    PCIe capacitor mod (24× 0402 0.22 µF → Gen1 x16) and watercooling product notes, with deep links to 170th Street for pad photos.
+    PCIe capacitor mod (24× 0402 0.22 µF → Gen1 x16), with deep links to 170th Street for pad photos. Liquid cooling product notes live under Hardware.
 
     [:octicons-arrow-right-24: Modifications](modifications/pcie-capacitor-mod.md)
 
@@ -121,15 +121,15 @@ Before you bolt this into a host, treat these as hard gates.
 ## Recommended path
 
 1. **Identify the SKU** with `lspci` (device `20c2` vs `2082`) before you buy or unlock. See [Introduction](getting-started/introduction.md).
-2. **Build the host** against [Prerequisites](getting-started/prerequisites.md): airflow or water plan, PSU, Linux install media, Above 4G Decoding.
+2. **Build the host** against [Prerequisites](getting-started/prerequisites.md): [airflow](hardware/air-cooling.md) or [water](hardware/water-cooling.md) plan, PSU, Linux install media, Above 4G Decoding.
 3. **Seat the card and verify stock identity** (idle power, PCI IDs, Gen1 x4 link) using [Quick Start](getting-started/quick-start.md).
-4. **Cool first**, then unlock with cmpunlocker. Read [Cooling](hardware/cooling.md) and [Unlock Overview](linux-unlock/unlock-overview.md).
-5. **Optional hardware mods** after the unlock is stable: [PCIe capacitor mod](modifications/pcie-capacitor-mod.md), [watercooling](modifications/watercooling.md).
+4. **Cool first**, then unlock with cmpunlocker. Read [Air Cooling](hardware/air-cooling.md) / [Water Cooling](hardware/water-cooling.md) and [Unlock Overview](linux-unlock/unlock-overview.md).
+5. **Optional hardware mods** after the unlock is stable: [PCIe capacitor mod](modifications/pcie-capacitor-mod.md). Water path: [Water Cooling](hardware/water-cooling.md).
 6. **Bench and write numbers back** into [Performance](performance/overview.md).
 
 ## Community
 
-It Still Boots documents what we run in the lab and points hard at the people who did the reverse engineering.
+This hub points hard at the people who did the reverse engineering.
 
 - [170th Street docs](https://170th-street.gitbook.io/hx) and [GitHub](https://github.com/amoghmunikote/170th-Street)
 - [Consensus-Protocol/cmp170hx wiki](https://github.com/Consensus-Protocol/cmp170hx/wiki)
@@ -141,7 +141,7 @@ More links live on [Community](community/community.md).
 ## Quick Start Checklist
 
 - [ ] Confirm SKU (`0x20C2` 8 GB → 64 GB unlock, or `0x2082` 10 GB → 40 GB unlock)
-- [ ] Plan cooling (strong airflow on the passive sink, or Bykski N-TESLA-A100-X-V2 water)
+- [ ] Plan cooling ([Air Cooling](hardware/air-cooling.md) on the passive sink, or [Water Cooling](hardware/water-cooling.md) / Bykski N-TESLA-A100-X-V2)
 - [ ] PSU with a real 8-pin CPU/EPS feed and headroom for **250–300 W** GPU draw
 - [ ] Host BIOS: Above 4G Decoding on; Secure Boot off for patched modules
 - [ ] Linux install with nvidia-open **610.43.02** or **610.43.03** and matching headers

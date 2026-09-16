@@ -2,7 +2,7 @@
 
 Hardware fix for the CMP 170HX lane-width clamp. Stock firmware also locks the link to Gen1; that Gen lock is a **software** unlock. This page is only about the missing AC coupling capacitors that force **x4** width.
 
-It Still Boots has not published its own pad photos or torque notes yet. Use [170th Street PCIe Capacitor Mod](https://170th-street.gitbook.io/hx/modifications/pcie-capacitor-mod) (and the [GitHub mirror](https://github.com/amoghmunikote/170th-Street/blob/master/modifications/pcie-capacitor-mod.md)) for pad identification and screw-by-screw access. Amogh Munikote documented the first public confirmation on this card in April 2026.
+Pad photos live on 170th Street. Use [170th Street PCIe Capacitor Mod](https://170th-street.gitbook.io/hx/modifications/pcie-capacitor-mod) (and the [GitHub mirror](https://github.com/amoghmunikote/170th-Street/blob/master/modifications/pcie-capacitor-mod.md)) for pad identification and screw-by-screw access. Amogh Munikote documented the first public confirmation on this card in April 2026.
 
 ## Why the link sticks at x4
 

@@ -2,7 +2,7 @@
 
 Firmware settings that matter when you seat a CMP 170HX and later unlock it with patched nvidia-open modules. Menu names differ by vendor. Hunt for the strings below rather than assuming an ASUS / Supermicro layout.
 
-It Still Boots has not published a board-by-board cookbook for every lab host yet. Capture your exact paths when you find them and send a PR against this page.
+No board-by-board cookbook yet for every lab host. Capture your exact paths when you find them and send a PR against this page.
 
 ## Settings to hunt
 

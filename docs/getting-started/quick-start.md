@@ -53,7 +53,7 @@ Exact menu names vary by vendor. Capture them on [Host BIOS](../bios/host-bios.m
 !!! danger "Dry-run limit"
     If you ever power the card without coolant in a waterblock, shut down within about **five minutes**.
 
-[Power →](../hardware/power.md) · [Cooling →](../hardware/cooling.md)
+[Power →](../hardware/power.md) · [Air Cooling →](../hardware/air-cooling.md) · [Water Cooling →](../hardware/water-cooling.md)
 
 **Difficulty:** Medium (water) / Easy (forced air)
 
@@ -106,7 +106,7 @@ Then perform a **cold reboot** (full power off, then boot).
 !!! tip "DKMS priority trap (Ubuntu-class hosts)"
     ServeTheHome forum reports: stock DKMS modules under `updates/dkms/` can win over `updates/cmpunlocker/`. If `nvidia-smi` still shows 8192 MiB after a “successful” install, check `modinfo -n nvidia` and add an explicit depmod override pointing at `updates/cmpunlocker`. Details: [Troubleshooting](../troubleshooting/common.md).
 
-Deep mechanism docs: [Consensus-Protocol/cmp170hx wiki](https://github.com/Consensus-Protocol/cmp170hx/wiki). It Still Boots will not rewrite the Falcon / ROP bible here.
+Deep mechanism docs: [Consensus-Protocol/cmp170hx wiki](https://github.com/Consensus-Protocol/cmp170hx/wiki). This hub does not rewrite the Falcon / ROP bible here.
 
 **Difficulty:** Medium–Hard
 
@@ -132,13 +132,13 @@ Optional compute sniff test: a short CUDA or OpenCL FP32 probe should leave the 
 Only after unlock verification:
 
 1. [PCIe capacitor mod](../modifications/pcie-capacitor-mod.md): **24× 0402 0.22 µF** → Gen1 x16 (~4 GB/s). Does not raise Gen by itself.
-2. [Watercooling](../modifications/watercooling.md): Bykski **N-TESLA-A100-X-V2** (avoid 80G and non-V2). Pad every empty IC footprint.
+2. [Water Cooling](../hardware/water-cooling.md): Bykski **N-TESLA-A100-X-V2** (avoid 80G and non-V2). Pad every empty IC footprint. Air path: [Air Cooling](../hardware/air-cooling.md).
 
 **Difficulty:** Hard (SMD) / Hard (loop)
 
 ### Step 9: Run a real workload
 
-Point your LLM stack at the unlocked device. It Still Boots lab headline: Nemotron W4A16 **228 tok/s** (16k coding), batch **1,306 tok/s**, **79%** retained at 128k; earlier Qwen3.8-27B DFlash ~212 tok/s sits in the matrix. Do not invent CSVs here; see [Performance](../performance/overview.md).
+Point your LLM stack at the unlocked device. Lab headline: Nemotron W4A16 **228 tok/s** (16k coding), batch **1,306 tok/s**, **79%** retained at 128k; earlier Qwen3.8-27B DFlash ~212 tok/s sits in the matrix. Do not invent CSVs here; see [Performance](../performance/overview.md).
 
 ---
 

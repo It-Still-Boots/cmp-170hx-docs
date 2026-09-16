@@ -1,6 +1,6 @@
 # Hardware Specifications
 
-Single-page reference for the NVIDIA CMP 170HX as It Still Boots uses it in the lab. Compute counts follow 170th Street Full Specifications (**70 SM / 4480 CUDA / 280 tensor** for both SKUs). Clocks, power, APIs, memory geometry, and bandwidth come from the same Full Specs / locked fact sheet.
+Single-page reference for the NVIDIA CMP 170HX as used in the lab. Compute counts follow 170th Street Full Specifications (**70 SM / 4480 CUDA / 280 tensor** for both SKUs). Clocks, power, APIs, memory geometry, and bandwidth come from the same Full Specs / locked fact sheet.
 
 Primary sources: [Full Specifications](https://170th-street.gitbook.io/hx/hardware/full-specifications), [What is the CMP 170HX?](https://170th-street.gitbook.io/hx/introduction/what-is-the-cmp-170hx), [170th-Street GitHub](https://github.com/amoghmunikote/170th-Street).
 
@@ -78,7 +78,7 @@ From 170th Street Full Specs performance table (paraphrased; see source for raw 
 
 Lab prose often summarizes stock FP32 FMA as the **~0.39–0.41 TFLOPS** class and unlocked FP32 as the **~12–13 TFLOPS** class. Cross-check your own OpenCL/CUDA microbench before publishing.
 
-PCB note: reference designators match the A100 40GB PCIe family closely enough that A100 schematics and waterblocks are useful (see [Teardown](teardown.md) and [Cooling](cooling.md)).
+PCB note: reference designators match the A100 40GB PCIe family closely enough that A100 schematics and waterblocks are useful (see [Teardown](teardown.md) and [Water Cooling](water-cooling.md)).
 
 ## Connectivity
 
@@ -119,12 +119,13 @@ See [Power](power.md).
 
 - Dual-slot passive cooler sized for rack airflow
 - No display outs: always keep a second GPU, iGPU, or BMC console for the host
-- Waterblock family: Bykski **N-TESLA-A100-X-V2** (see [Cooling](cooling.md))
+- Waterblock family: Bykski **N-TESLA-A100-X-V2** (see [Water Cooling](water-cooling.md))
 
 ## Related pages
 
 - [Power](power.md)
-- [Cooling](cooling.md)
+- [Air Cooling](air-cooling.md)
+- [Water Cooling](water-cooling.md)
 - [Teardown](teardown.md)
 - [Quick Start](../getting-started/quick-start.md)
 
