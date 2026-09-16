@@ -26,13 +26,13 @@ Shared clocks and power envelope: base **1140 MHz**, boost **1410 MHz**, default
 !!! info "Compute counts"
     Both SKUs lock to Full Specs: **70 SM / 4480 CUDA / 280 tensor**. Memory bus, bandwidth, and unlocked capacity still differ by SKU.
 
-Sources: [What is the CMP 170HX?](https://170th-street.gitbook.io/hx/introduction/what-is-the-cmp-170hx), [Full Specifications](https://170th-street.gitbook.io/hx/hardware/full-specifications), [170th-Street repo](https://github.com/amoghmunikote/170th-Street).
+Sources: [What is the CMP 170HX?](https://170th-street.gitbook.io/hx/introduction/what-is-the-cmp-170hx), [Full Specifications](https://170th-street.gitbook.io/hx/hardware/full-specifications), [GitHub mirror](https://github.com/amoghmunikote/170th-Street).
 
 ## What NVIDIA clamped
 
 Stock behavior is intentional lockdown layered on complete-enough silicon:
 
-1. **FP32 FMA throttle.** Stock FP32 FMA sits in the **~0.39–0.41 TFLOPS** class. Unlocked FP32 climbs into the **~12–13 TFLOPS** class per 170th Street tables.
+1. **FP32 FMA throttle.** Stock FP32 FMA sits in the **~0.39–0.41 TFLOPS** class. Unlocked FP32 climbs into the **~12–13 TFLOPS** class per Full Specs tables.
 2. **Memory geometry.** Firmware/OTP presents 8 GB or 10 GB. Physical HBM stacks unlock to **64 GB** or **40 GB** respectively via cmpunlocker.
 3. **PCIe Gen lock.** Firmware holds the link at Gen1 until a software unlock enables Gen2.
 4. **PCIe lane width.** Twelve of sixteen lanes lack AC coupling capacitors on the PCB, so the link trains at **x4** until you solder the missing caps.

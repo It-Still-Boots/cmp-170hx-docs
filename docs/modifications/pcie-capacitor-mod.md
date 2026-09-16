@@ -2,7 +2,7 @@
 
 Hardware fix for the CMP 170HX lane-width clamp. Stock firmware also locks the link to Gen1; that Gen lock is a **software** unlock. This page is only about the missing AC coupling capacitors that force **x4** width.
 
-Pad photos live on 170th Street. Use [170th Street PCIe Capacitor Mod](https://170th-street.gitbook.io/hx/modifications/pcie-capacitor-mod) (and the [GitHub mirror](https://github.com/amoghmunikote/170th-Street/blob/master/modifications/pcie-capacitor-mod.md)) for pad identification and screw-by-screw access. Amogh Munikote documented the first public confirmation on this card in April 2026.
+Pad photos live in the upstream mod guide. Use the [PCIe capacitor mod guide](https://170th-street.gitbook.io/hx/modifications/pcie-capacitor-mod) (and the [GitHub mirror](https://github.com/amoghmunikote/170th-Street/blob/master/modifications/pcie-capacitor-mod.md)) for pad identification and screw-by-screw access. Amogh Munikote documented the first public confirmation on this card in April 2026.
 
 ## Why the link sticks at x4
 
@@ -25,7 +25,7 @@ After caps only: **Gen1 x16** (~**4 GB/s**). After caps **and** Gen2 unlock: Gen
 | Quantity | **24** installed (order **≥30**; 0402 losses are real) |
 | Confirmed example | Samsung **CL05B224KO5NNNC** (DigiKey 1276-1176-1-ND) |
 
-0.22 µF matches the NVIDIA A100 GA100-883 reference schematic value cited by 170th Street (P1001-B02, PCIe connector IO page). Equivalent X7R 0402 0.22 µF parts from other vendors are fine if the footprint and voltage rating match.
+0.22 µF matches the NVIDIA A100 GA100-883 reference schematic value cited in the upstream mod guide (P1001-B02, PCIe connector IO page). Equivalent X7R 0402 0.22 µF parts from other vendors are fine if the footprint and voltage rating match.
 
 Reference designators on the schematic sit in the **C1100–C1350** range (for example C1120 / C1125 / C1130 / C1135 per differential pair). Empty pads show copper with no component, along the lane routing between the gold fingers and the GPU.
 
@@ -39,15 +39,15 @@ This is a real board-rework job. Flux residue, bridges, and lifted pads will rui
 
 ## High-level steps
 
-1. Complete [teardown](../hardware/teardown.md) far enough to access the empty pads (follow 170th Street for the slide-out / heatsink sequence).
-2. Identify all **24** empty AC coupling positions against the 170th Street photos / schematic callouts.
+1. Complete [teardown](../hardware/teardown.md) far enough to access the empty pads (follow the [Teardown Guide](https://170th-street.gitbook.io/hx/hardware/teardown-guide) for the slide-out / heatsink sequence).
+2. Identify all **24** empty AC coupling positions against the upstream photos / schematic callouts.
 3. Clean pads, apply flux, place and reflow each **0.22 µF 0402**.
 4. Inspect every joint under magnification. Check for bridges to neighbors and for tombstoned parts.
 5. Clean flux. Reassemble or proceed to waterblock prep.
 6. Boot and verify link width (below).
 
 !!! danger "Dangers"
-    Shorts across a differential pair or to ground will take out lanes or the whole endpoint. Do not probe powered gold fingers with a clumsy iron. Work unpowered, ESD-safe, and confirm continuity only with a plan (170th Street covers probing guidance). If you are unsure, stop and pay someone who does 0402 daily.
+    Shorts across a differential pair or to ground will take out lanes or the whole endpoint. Do not probe powered gold fingers with a clumsy iron. Work unpowered, ESD-safe, and confirm continuity only with a plan (the upstream mod guide covers probing guidance). If you are unsure, stop and pay someone who does 0402 daily.
 
 ## Verification
 
@@ -61,7 +61,7 @@ sudo lspci -s <bus:dev.fn> -vvv | grep LnkSta
 | Caps done, Gen unlock not applied | Speed **2.5 GT/s**, Width **x16** |
 | Caps + Gen2 unlock | Speed **5.0 GT/s**, Width **x16** when both layers stick |
 
-170th Street's confirmed before/after on this card moved width from x4 to x16 at Gen1. Gen2 remains the software half.
+Community validation on this card moved width from x4 to x16 at Gen1. Gen2 remains the software half.
 
 ## Related pages
 

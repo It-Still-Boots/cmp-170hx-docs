@@ -1,8 +1,8 @@
 # Hardware Specifications
 
-Single-page reference for the NVIDIA CMP 170HX as used in the lab. Compute counts follow 170th Street Full Specifications (**70 SM / 4480 CUDA / 280 tensor** for both SKUs). Clocks, power, APIs, memory geometry, and bandwidth come from the same Full Specs / locked fact sheet.
+Single-page reference for the NVIDIA CMP 170HX as used in the lab. Compute counts follow Full Specifications (**70 SM / 4480 CUDA / 280 tensor** for both SKUs). Clocks, power, APIs, memory geometry, and bandwidth come from the same Full Specs / locked fact sheet.
 
-Primary sources: [Full Specifications](https://170th-street.gitbook.io/hx/hardware/full-specifications), [What is the CMP 170HX?](https://170th-street.gitbook.io/hx/introduction/what-is-the-cmp-170hx), [170th-Street GitHub](https://github.com/amoghmunikote/170th-Street).
+Primary sources: [Full Specifications](https://170th-street.gitbook.io/hx/hardware/full-specifications), [What is the CMP 170HX?](https://170th-street.gitbook.io/hx/introduction/what-is-the-cmp-170hx), [GitHub mirror](https://github.com/amoghmunikote/170th-Street).
 
 ## General
 
@@ -67,7 +67,7 @@ Locked bandwidth figures: **~1.49 TB/s** (8 GB SKU) and **~1.56 TB/s** (10 GB SK
 
 ## Performance (theoretical vs unlocked)
 
-From 170th Street Full Specs performance table (paraphrased; see source for raw rows):
+From the Full Specs performance table (paraphrased; see source for raw rows):
 
 | Metric | Stock (throttled) | Unlocked (class) |
 |--------|-------------------|------------------|

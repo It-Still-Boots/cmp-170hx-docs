@@ -61,7 +61,7 @@ Primary community sources: [170th Street](https://170th-street.gitbook.io/hx) an
 
     ---
 
-    Specs tables, power connector reality, air and water cooling, and a teardown summary with deep links to 170th Street.
+    Specs tables, power connector reality, air and water cooling, and a teardown summary with links to the upstream guides.
 
     [:octicons-arrow-right-24: Hardware Guide](hardware/specifications.md)
 
@@ -69,7 +69,7 @@ Primary community sources: [170th Street](https://170th-street.gitbook.io/hx) an
 
     ---
 
-    PCIe capacitor mod (24× 0402 0.22 µF → Gen1 x16), with deep links to 170th Street for pad photos. Liquid cooling product notes live under Hardware.
+    PCIe capacitor mod (24× 0402 0.22 µF → Gen1 x16), with links to pad photos in the upstream mod guide. Liquid cooling product notes live under Hardware.
 
     [:octicons-arrow-right-24: Modifications](modifications/pcie-capacitor-mod.md)
 
@@ -131,7 +131,6 @@ Before you bolt this into a host, treat these as hard gates.
 
 This hub points hard at the people who did the reverse engineering.
 
-- [170th Street docs](https://170th-street.gitbook.io/hx) and [GitHub](https://github.com/amoghmunikote/170th-Street)
 - [Consensus-Protocol/cmp170hx wiki](https://github.com/Consensus-Protocol/cmp170hx/wiki)
 - [amoghmunikote/cmpunlocker](https://github.com/amoghmunikote/cmpunlocker) (canonical unlock tool; forks such as [bayley/cmpunlocker](https://github.com/bayley/cmpunlocker) add P2P work)
 - [ServeTheHome Forums: unlocked measurements thread](https://forums.servethehome.com/index.php?threads/cmp-170hx-unlocked-and-measured-164-tflops-fp16-64gb-verified-and-how-to-tell-one-from-an-a100.56137/)

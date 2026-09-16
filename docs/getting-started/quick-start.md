@@ -25,7 +25,7 @@ lspci -s <bus:dev.fn> -vvv | grep -E 'LnkCap|LnkSta|Subsystem'
 | `10de:20c2` | 8 GB | **64 GB** |
 | `10de:2082` | 10 GB | **40 GB** |
 
-Subsystem checks: `1585` (8 GB) and `1557` (10 GB) per 170th Street.
+Subsystem checks: `1585` (8 GB) and `1557` (10 GB) per Full Specs.
 
 **Difficulty:** Easy
 

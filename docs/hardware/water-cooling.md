@@ -2,11 +2,11 @@
 
 Closed-loop and block options for putting a CMP 170HX on a desk without a rack full of screamers. Stock cooling is a **passive** server sink. For daily unlocked workloads, plan on water (AIO kit or custom loop) or serious directed airflow ([Air Cooling](air-cooling.md)).
 
-Install warnings and pad procedure still live on [170th Street Watercooling Installation](https://170th-street.gitbook.io/hx/modifications/watercooling-installation). Read that before you pull the stock sink.
+Install warnings and pad procedure still live on [Watercooling Installation](https://170th-street.gitbook.io/hx/modifications/watercooling-installation). Read that before you pull the stock sink.
 
 ## Block summary (community-validated)
 
-Recommended block from 170th Street community validation:
+Recommended block from community validation:
 
 | Item | Spec |
 |------|------|
@@ -21,9 +21,9 @@ Recommended block from 170th Street community validation:
 !!! warning "Thermal runaway"
     GA100 leakage climbs with temperature. Dry-run without coolant only for a short bring-up, then power off within about **five minutes**. Treat temperatures above ~**80 °C** as an emergency stop.
 
-Performance anecdote from 170th Street (paraphrased): around **180 W** on a non-FMA FP32 workload, a **360 mm** radiator with fans at minimum speed held roughly **45 °C**. Treat that as a qualitative datapoint, then log your own loop.
+Performance anecdote from community validation (paraphrased): around **180 W** on a non-FMA FP32 workload, a **360 mm** radiator with fans at minimum speed held roughly **45 °C**. Treat that as a qualitative datapoint, then log your own loop.
 
-Full procedure (pads, power-cable wrestling, backplate spacing with the saved PCIe bracket): [170th Street Watercooling Installation](https://170th-street.gitbook.io/hx/modifications/watercooling-installation).
+Full procedure (pads, power-cable wrestling, backplate spacing with the saved PCIe bracket): [Watercooling Installation](https://170th-street.gitbook.io/hx/modifications/watercooling-installation).
 
 ## Bykski AIO (FormulaMod)
 
@@ -39,7 +39,7 @@ FormulaMod lists the kit with **120 mm**, **240 mm**, and **360 mm** radiators (
 
 | Radiator | Fans (typical) | Notes |
 |----------|----------------|-------|
-| **360 mm** | 3× 120 mm | Default recommendation for an unlocked 170HX at 250–300 W. 170th Street’s qualitative datapoint (~**45 °C** at ~**180 W** on a 360 mm with fans at minimum) sits in this class. |
+| **360 mm** | 3× 120 mm | Default recommendation for an unlocked 170HX at 250–300 W. The qualitative datapoint above (~**45 °C** at ~**180 W** on a 360 mm with fans at minimum) sits in this class. |
 | **240 mm** | 2× 120 mm | Possible in a tight case if airflow on the rad is strong and you watch temps under real LLM / CUDA load. Leave headroom. |
 | **120 mm** | 1× 120 mm | **Most likely not enough** for sustained unlocked load on this card. Fine for photos and maybe idle / light probes; treat it as undersized for 24/7 inference. |
 
@@ -101,10 +101,10 @@ Treat this as a **240 mm** thermal budget (same caution as the Bykski 240 mm row
 2. Pad every empty footprint the pillars can touch.
 3. Seat the 8-pin / EPS power cable path before you fully torque the block (rigid cables fight a fully screwed plate).
 4. Keep the original PCIe bracket when fitting the backplate for correct spacing.
-5. Pressure-test ≥15 minutes before coolant fill (per 170th Street).
+5. Pressure-test ≥15 minutes before coolant fill (per the watercooling install guide).
 6. Recheck pad compression at the block edges after the first heat cycle.
 
-Deep procedure: [170th Street Watercooling Installation](https://170th-street.gitbook.io/hx/modifications/watercooling-installation).
+Deep procedure: [Watercooling Installation](https://170th-street.gitbook.io/hx/modifications/watercooling-installation).
 
 ## Related pages
 

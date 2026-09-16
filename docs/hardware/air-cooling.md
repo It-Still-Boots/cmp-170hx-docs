@@ -1,6 +1,6 @@
 # Air Cooling
 
-The CMP 170HX ships with a passive server heatsink. In a rack aisle with directed airflow that is a feature. On a desk, it is a thermal incident waiting for a CUDA kernel. This page covers forced air through the stock sink. Liquid options live under [Water Cooling](water-cooling.md). Screw-by-screw install warnings stay on 170th Street.
+The CMP 170HX ships with a passive server heatsink. In a rack aisle with directed airflow that is a feature. On a desk, it is a thermal incident waiting for a CUDA kernel. This page covers forced air through the stock sink. Liquid options live under [Water Cooling](water-cooling.md). Screw-by-screw install warnings stay in the upstream [Teardown Guide](https://170th-street.gitbook.io/hx/hardware/teardown-guide).
 
 Sources: [Teardown Guide](https://170th-street.gitbook.io/hx/hardware/teardown-guide), [Full Specifications](https://170th-street.gitbook.io/hx/hardware/full-specifications).
 
@@ -15,7 +15,7 @@ Sources: [Teardown Guide](https://170th-street.gitbook.io/hx/hardware/teardown-g
 | Dry-run rule | Power off within ~**5 minutes** if the card has no coolant / no real airflow |
 
 !!! danger "Thermal runaway"
-    GA100 leakage rises with temperature. 170th Street’s watercooling guide warns that dry-running without coolant is a short experiment only: shut down within about five minutes, and treat temperatures above ~80 °C as an emergency stop.
+    GA100 leakage rises with temperature. The watercooling install guide warns that dry-running without coolant is a short experiment only: shut down within about five minutes, and treat temperatures above ~80 °C as an emergency stop.
 
 ## Forced air through the stock heatsink
 

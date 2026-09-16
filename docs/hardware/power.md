@@ -1,6 +1,6 @@
 # Power Requirements
 
-How to feed a CMP 170HX without melting an adapter or brown-outing a mid tower PSU. Numbers below come from 170th Street Full Specs and community unlock docs; treat wall-meter readings from your own chassis as ground truth.
+How to feed a CMP 170HX without melting an adapter or brown-outing a mid tower PSU. Numbers below come from Full Specs and community unlock docs; treat wall-meter readings from your own chassis as ground truth.
 
 Sources: [Full Specifications](https://170th-street.gitbook.io/hx/hardware/full-specifications), [Consensus-Protocol/cmp170hx](https://github.com/Consensus-Protocol/cmp170hx).
 

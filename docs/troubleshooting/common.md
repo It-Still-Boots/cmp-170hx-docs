@@ -61,7 +61,7 @@ On Ubuntu-class hosts, DKMS under `updates/dkms/` often beats `updates/cmpunlock
 
 **Likely causes:** Empty IC footprints left bare under block pillars; backplate installed without the saved PCIe bracket spacing.
 
-**First checks:** Do not keep powering a suspected short. Tear down, inspect pads, cover every empty footprint the pillars can reach, verify bracket spacing. Procedure detail: [170th Street watercooling](https://170th-street.gitbook.io/hx/modifications/watercooling-installation) and [Water Cooling](../hardware/water-cooling.md).
+**First checks:** Do not keep powering a suspected short. Tear down, inspect pads, cover every empty footprint the pillars can reach, verify bracket spacing. Procedure detail: [Watercooling Installation](https://170th-street.gitbook.io/hx/modifications/watercooling-installation) and [Water Cooling](../hardware/water-cooling.md).
 
 ## Driver upgrade broke unlock
 

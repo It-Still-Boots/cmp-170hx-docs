@@ -1,8 +1,8 @@
 # Teardown
 
-Summary of what a CMP 170HX teardown involves, with deep links to the step-by-step on 170th Street. This page does **not** invent screw counts or motion paths beyond what that guide documents.
+Summary of what a CMP 170HX teardown involves, with links to the step-by-step upstream guide. This page does **not** invent screw counts or motion paths beyond what that guide documents.
 
-**Canonical procedure:** [170th Street Teardown Guide](https://170th-street.gitbook.io/hx/hardware/teardown-guide) · mirror notes in [amoghmunikote/170th-Street](https://github.com/amoghmunikote/170th-Street)
+**Canonical procedure:** [Teardown Guide](https://170th-street.gitbook.io/hx/hardware/teardown-guide) · [GitHub mirror](https://github.com/amoghmunikote/170th-Street)
 
 ## Why tear it down
 
@@ -14,7 +14,7 @@ Summary of what a CMP 170HX teardown involves, with deep links to the step-by-st
 ## Before you start
 
 !!! warning "Read the full guide first"
-    170th Street calls out steps that confuse even experienced techs (power-cable extraction and sliding the PCB out of the backplane). Watch their linked reference videos before you touch steps that free the board or the heatsink.
+    The teardown guide calls out steps that confuse even experienced techs (power-cable extraction and sliding the PCB out of the backplane). Watch the linked reference videos before you touch steps that free the board or the heatsink.
 
 Tools called out there:
 
@@ -26,7 +26,7 @@ Tools called out there:
 
 ## High-level sequence (summary only)
 
-The 170th Street guide’s numbered flow, paraphrased:
+The teardown guide’s numbered flow, paraphrased:
 
 1. Remove the **four** PCIe bracket screws; **save the bracket** for later waterblock/backplate spacing.
 2. Leave the opposite-side mounting bracket alone.
@@ -45,8 +45,8 @@ For torque sense, photos, and the video embeds, use the [canonical Teardown Guid
 
 | Next goal | Go here |
 |-----------|---------|
-| Waterblock | [Water Cooling](water-cooling.md) → [170th Street watercooling](https://170th-street.gitbook.io/hx/modifications/watercooling-installation) |
-| Lane caps | [PCIe capacitor mod](../modifications/pcie-capacitor-mod.md) → [170th Street mod page](https://170th-street.gitbook.io/hx/modifications/pcie-capacitor-mod) / [GitHub mod doc](https://github.com/amoghmunikote/170th-Street/blob/master/modifications/pcie-capacitor-mod.md) |
+| Waterblock | [Water Cooling](water-cooling.md) → [Watercooling Installation](https://170th-street.gitbook.io/hx/modifications/watercooling-installation) |
+| Lane caps | [PCIe capacitor mod](../modifications/pcie-capacitor-mod.md) → [PCIe capacitor mod guide](https://170th-street.gitbook.io/hx/modifications/pcie-capacitor-mod) / [GitHub mod doc](https://github.com/amoghmunikote/170th-Street/blob/master/modifications/pcie-capacitor-mod.md) |
 | Reassemble air cooler | Reverse the guide; renew paste; confirm spring washers return to the original screws |
 
 !!! danger "Waterblock pad reminder"

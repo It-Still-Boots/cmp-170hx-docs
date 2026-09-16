@@ -38,7 +38,7 @@ Workstation and used server boards are both fair game. Document your exact BIOS 
 | System headroom | Size the PSU for GPU + CPU + drives with ≥20% margin |
 
 !!! warning "Connector shape"
-    Stock feed is **1× 8-pin CPU/EPS-style via adapter**, matching 170th Street Full Specs. Do not assume a standard PCIe GPU 8-pin pinout on the card side. Use the adapter that shipped with the card or a verified equivalent.
+    Stock feed is **1× 8-pin CPU/EPS-style via adapter**, matching Full Specs. Do not assume a standard PCIe GPU 8-pin pinout on the card side. Use the adapter that shipped with the card or a verified equivalent.
 
 [Power details →](../hardware/power.md)
 
@@ -49,11 +49,11 @@ Pick one path before first CUDA burn-in:
 | Path | What to buy | Notes |
 |------|-------------|-------|
 | Forced air | High static pressure 120/140 mm fans aimed at the passive sink | Works in open benches and server chassis with directed airflow |
-| Water | Bykski **N-TESLA-A100-X-V2** + loop (rad, pump, fittings, coolant) | Compatible family also covers A100 40GB PCIe / A30 / L40 per 170th Street |
+| Water | Bykski **N-TESLA-A100-X-V2** + loop (rad, pump, fittings, coolant) | Compatible family also covers A100 40GB PCIe / A30 / L40 per community validation |
 | Avoid | Bykski **N-TESLA-A100-80G-X-V2**, non-V2 acrylic block | Wrong PCB or weaker construction |
 
 !!! danger "Thermal pads on empty footprints"
-    Every unpopulated IC footprint under the waterblock pillars needs a thermal pad. Bare copper under metal pillars shorts and kills boards. This is the most common waterblock brick mode called out in 170th Street’s watercooling guide.
+    Every unpopulated IC footprint under the waterblock pillars needs a thermal pad. Bare copper under metal pillars shorts and kills boards. This is the most common waterblock brick mode called out in the watercooling install guide.
 
 [Air Cooling →](../hardware/air-cooling.md) · [Water Cooling →](../hardware/water-cooling.md)
 
@@ -73,7 +73,7 @@ Pick one path before first CUDA burn-in:
 - Plastic spudger
 - Organized tray for spring screws and washers
 
-Deep teardown steps: [Teardown](../hardware/teardown.md) and the [170th Street Teardown Guide](https://170th-street.gitbook.io/hx/hardware/teardown-guide).
+Deep teardown steps: [Teardown](../hardware/teardown.md) and the [Teardown Guide](https://170th-street.gitbook.io/hx/hardware/teardown-guide).
 
 ---
 
