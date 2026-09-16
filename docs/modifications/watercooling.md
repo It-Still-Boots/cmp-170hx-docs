@@ -37,8 +37,6 @@ For a **custom loop** (your own pump / rad / fittings), the community-validated 
 
 [Astralcooler server GPU AIO](https://www.formulamod.com/Astralcooler-All-in-one-server-GPU-cooler-radiator-360480-compatible-with-NVIDIA-CMP-170HX-p7185402.html) is another A100-family full-cover kit sold explicitly for **CMP 170HX / A100 40GB / A30 24GB**. Oxygen-free copper baseplate, nickel plating, all-metal chassis story, pump(s) in the tubing.
 
-![Astralcooler kit compatibility and radiator options](../assets/watercooling/astralcooler-compat.jpg)
-
 ### One card vs two cards
 
 | Kit | What you get | Use when |
