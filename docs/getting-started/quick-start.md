@@ -100,7 +100,7 @@ sudo ./install.sh --profile=10gb   # 10 GB card → 40 GB geometry
 Then perform a **cold reboot** (full power off, then boot).
 
 !!! tip "DKMS priority trap (Ubuntu-class hosts)"
-    ServeTheHome forum reports: stock DKMS modules under `updates/dkms/` can win over `updates/cmpunlocker/`. If `nvidia-smi` still shows 8192 MiB after a “successful” install, check `modinfo -n nvidia` and add an explicit depmod override pointing at `updates/cmpunlocker`. Details belong in Troubleshooting once drafted.
+    ServeTheHome forum reports: stock DKMS modules under `updates/dkms/` can win over `updates/cmpunlocker/`. If `nvidia-smi` still shows 8192 MiB after a “successful” install, check `modinfo -n nvidia` and add an explicit depmod override pointing at `updates/cmpunlocker`. Details: [Troubleshooting](../troubleshooting/common.md).
 
 Deep mechanism docs: [Consensus-Protocol/cmp170hx wiki](https://github.com/Consensus-Protocol/cmp170hx/wiki). It Still Boots will not rewrite the Falcon / ROP bible here.
 
@@ -156,7 +156,7 @@ Point your LLM stack at the unlocked device. It Still Boots lab target for later
 
 **Check:** EPS adapter seating, PSU capacity, try another slot, clear CMOS, confirm the card is not shorted after a partial waterblock install.
 
-[Troubleshooting stub →](../troubleshooting/common.md)
+[Troubleshooting →](../troubleshooting/common.md)
 
 ---
 
@@ -166,3 +166,12 @@ Point your LLM stack at the unlocked device. It Still Boots lab target for later
 2. Read [Specifications](../hardware/specifications.md) once before you publish benches
 3. Follow [Unlock Overview](../linux-unlock/unlock-overview.md) for canonical links
 4. Drop numbers into [Performance](../performance/overview.md) when the lab run is reproducible
+
+## References
+
+References and further info from:
+
+- https://github.com/amoghmunikote/cmpunlocker
+- https://github.com/Consensus-Protocol/cmp170hx/wiki
+- https://170th-street.gitbook.io/hx
+- https://forums.servethehome.com/index.php?threads/cmp-170hx-unlocked-and-measured-164-tflops-fp16-64gb-verified-and-how-to-tell-one-from-an-a100.56137/

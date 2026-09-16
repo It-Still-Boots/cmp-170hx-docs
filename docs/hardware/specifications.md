@@ -100,7 +100,7 @@ PCB note: reference designators match the A100 40GB PCIe family closely enough t
 | NVLink | Connectors present, fuse-disabled |
 | Power connector | 1× 8-pin CPU/EPS-style via adapter |
 
-Stock lockdown is two independent layers: firmware Gen lock, plus missing AC coupling capacitors on **12 of 16** lanes. Capacitor mod and Gen2 unlock each solve one layer. Neither replaces the other. Procedure stub: [PCIe capacitor mod](../modifications/pcie-capacitor-mod.md).
+Stock lockdown is two independent layers: firmware Gen lock, plus missing AC coupling capacitors on **12 of 16** lanes. Capacitor mod and Gen2 unlock each solve one layer. Neither replaces the other. Procedure: [PCIe capacitor mod](../modifications/pcie-capacitor-mod.md).
 
 ## Power
 
@@ -135,3 +135,12 @@ See [Power](power.md).
 - [Cooling](cooling.md)
 - [Teardown](teardown.md)
 - [Quick Start](../getting-started/quick-start.md)
+
+## References
+
+References and further info from:
+
+- https://170th-street.gitbook.io/hx/hardware/full-specifications
+- https://170th-street.gitbook.io/hx/introduction/what-is-the-cmp-170hx
+- https://github.com/amoghmunikote/170th-Street
+- https://github.com/Consensus-Protocol/cmp170hx/wiki

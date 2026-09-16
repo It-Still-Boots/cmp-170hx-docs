@@ -65,3 +65,11 @@ Each additional 170HX adds another ~250–300 W planning chunk and another EPS f
 - [Cooling](cooling.md)
 - [Prerequisites](../getting-started/prerequisites.md)
 - [Quick Start](../getting-started/quick-start.md)
+
+## References
+
+References and further info from:
+
+- https://170th-street.gitbook.io/hx/hardware/full-specifications
+- https://github.com/Consensus-Protocol/cmp170hx
+- https://github.com/bayley/cmpunlocker

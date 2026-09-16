@@ -150,3 +150,13 @@ Community reports and tools on [Localmaxxing](https://www.localmaxxing.com/en/re
 - [Decode calculator](https://www.localmaxxing.com/en/decode-calculator)
 
 Optional stack-comparison context from the same reports index on dual **RTX 3090 TP2** (separate hardware from this 170HX lab): MTP vs DFlash, and vLLM vs SGLang DFlash2.
+
+## References
+
+References and further info from:
+
+- https://www.localmaxxing.com/en/reports
+- https://www.localmaxxing.com/en/hardware
+- https://www.localmaxxing.com/en/decode-calculator
+- https://github.com/amoghmunikote/cmpunlocker
+- https://170th-street.gitbook.io/hx

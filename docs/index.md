@@ -73,7 +73,7 @@ Primary community sources: [170th Street](https://170th-street.gitbook.io/hx) an
 
     ---
 
-    PCIe capacitor mod and watercooling stubs for this pass. Full procedures land in a later docs pass.
+    PCIe capacitor mod (24× 0402 0.22 µF → Gen1 x16) and watercooling product notes, with deep links to 170th Street for pad photos.
 
     [:octicons-arrow-right-24: Modifications](modifications/pcie-capacitor-mod.md)
 
@@ -97,7 +97,7 @@ Primary community sources: [170th Street](https://170th-street.gitbook.io/hx) an
 
     ---
 
-    Common failure modes stub for this pass. Expand as lab tickets land.
+    Card not seen, Gen stuck at 1, memory still 8/10 GB, DKMS fights, thermal abort, waterblock shorts, driver upgrades.
 
     [:octicons-arrow-right-24: Troubleshooting](troubleshooting/common.md)
 
@@ -111,7 +111,7 @@ Before you bolt this into a host, treat these as hard gates.
     Passive heatsink needs strong directed airflow, or replace it with water. Thermal runaway above ~**80 °C** is a documented failure mode. Dry-run without coolant: power off within ~**5 minutes**.
 
 !!! warning "Host BIOS"
-    You need a host that can train a PCIe link to a Gen1 (then Gen2 after unlock) endpoint with Above 4G Decoding enabled for large BAR work. Details TBD on [Host BIOS](bios/host-bios.md).
+    You need a host that can train a PCIe link to a Gen1 (then Gen2 after unlock) endpoint with Above 4G Decoding enabled for large BAR work. Checklist and setting names: [Host BIOS](bios/host-bios.md).
 
 !!! warning "Linux + specific open driver"
     Community unlock paths target **nvidia-open 610.43.02 / 610.43.03**, matching kernel headers, root, and Secure Boot off. Pin the driver tree before you chase performance numbers.
@@ -154,3 +154,13 @@ More links live on [Community](community/community.md).
 - [ ] Only then chase capacitor mod, waterblock, or LLM benches
 
 For the step-by-step, see the [Quick Start Guide](getting-started/quick-start.md).
+
+## References
+
+References and further info from:
+
+- https://170th-street.gitbook.io/hx
+- https://github.com/amoghmunikote/170th-Street
+- https://github.com/amoghmunikote/cmpunlocker
+- https://github.com/Consensus-Protocol/cmp170hx/wiki
+- https://forums.servethehome.com/index.php?threads/cmp-170hx-unlocked-and-measured-164-tflops-fp16-64gb-verified-and-how-to-tell-one-from-an-a100.56137/

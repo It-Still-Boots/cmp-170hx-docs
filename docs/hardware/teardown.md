@@ -45,8 +45,8 @@ For torque sense, photos, and the video embeds, use the [canonical Teardown Guid
 
 | Next goal | Go here |
 |-----------|---------|
-| Waterblock | [Cooling summary](cooling.md) → [watercooling stub](../modifications/watercooling.md) → [170th Street watercooling](https://170th-street.gitbook.io/hx/modifications/watercooling-installation) |
-| Lane caps | [PCIe capacitor mod stub](../modifications/pcie-capacitor-mod.md) → [170th Street mod page](https://170th-street.gitbook.io/hx/modifications/pcie-capacitor-mod) / [GitHub mod doc](https://github.com/amoghmunikote/170th-Street/blob/master/modifications/pcie-capacitor-mod.md) |
+| Waterblock | [Cooling summary](cooling.md) → [Watercooling](../modifications/watercooling.md) → [170th Street watercooling](https://170th-street.gitbook.io/hx/modifications/watercooling-installation) |
+| Lane caps | [PCIe capacitor mod](../modifications/pcie-capacitor-mod.md) → [170th Street mod page](https://170th-street.gitbook.io/hx/modifications/pcie-capacitor-mod) / [GitHub mod doc](https://github.com/amoghmunikote/170th-Street/blob/master/modifications/pcie-capacitor-mod.md) |
 | Reassemble air cooler | Reverse the guide; renew paste; confirm spring washers return to the original screws |
 
 !!! danger "Waterblock pad reminder"
@@ -56,4 +56,14 @@ For torque sense, photos, and the video embeds, use the [canonical Teardown Guid
 
 - [Cooling](cooling.md)
 - [Specifications](specifications.md)
-- [Modifications stubs](../modifications/pcie-capacitor-mod.md)
+- [PCIe capacitor mod](../modifications/pcie-capacitor-mod.md)
+- [Watercooling](../modifications/watercooling.md)
+
+## References
+
+References and further info from:
+
+- https://170th-street.gitbook.io/hx/hardware/teardown-guide
+- https://github.com/amoghmunikote/170th-Street
+- https://170th-street.gitbook.io/hx/modifications/watercooling-installation
+- https://170th-street.gitbook.io/hx/modifications/pcie-capacitor-mod

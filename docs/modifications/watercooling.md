@@ -89,3 +89,14 @@ Treat this as a **240 mm** thermal budget (same caution as the Bykski 240 mm row
 5. Pressure-test ≥15 minutes before coolant fill (per 170th Street).
 
 Deep procedure: [170th Street Watercooling Installation](https://170th-street.gitbook.io/hx/modifications/watercooling-installation). Hardware cooling overview: [Cooling](../hardware/cooling.md).
+
+## References
+
+References and further info from:
+
+- https://170th-street.gitbook.io/hx/modifications/watercooling-installation
+- https://www.formulamod.com/Bykski-AIO-Cooler-for-NVIDIA-Tesla-A100-40GB-and-A30-p6189666.html
+- https://www.formulamod.com/Bykski-GPU-Block-For-Nvidia-Tesla-A100-40GB-Nvidia-CMP-170HX-Nvidia-Tesla-A30-24G-High-Heat-Resistance-Material-POM-Full-Metal-Construction-With-Backplate-Full-Cover-GPU-Water-Cooling-Cooler-Radiator-Block-N-TESLA-A100-X-V2-p3765067.html
+- https://www.formulamod.com/Astralcooler-All-in-one-server-GPU-cooler-radiator-360480-compatible-with-NVIDIA-CMP-170HX-p7185402.html
+- https://www.aliexpress.com/item/1005012960080788.html
+- https://www.aliexpress.com/item/1005012990720684.html

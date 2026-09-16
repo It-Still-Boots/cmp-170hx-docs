@@ -171,3 +171,14 @@ Install after drivers load:
 3. [Specifications](../hardware/specifications.md) when you write purchase notes or bench headers
 
 **Lab tip:** Order cooling parts in the same cart as the card. The passive sink is honest about its design target: a screaming server aisle with directed airflow.
+
+## References
+
+References and further info from:
+
+- https://170th-street.gitbook.io/hx/hardware/full-specifications
+- https://170th-street.gitbook.io/hx/hardware/teardown-guide
+- https://170th-street.gitbook.io/hx/modifications/watercooling-installation
+- https://github.com/amoghmunikote/cmpunlocker
+- https://github.com/bayley/cmpunlocker
+- https://github.com/Consensus-Protocol/cmp170hx

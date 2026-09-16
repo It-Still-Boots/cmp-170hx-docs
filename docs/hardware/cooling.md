@@ -69,5 +69,13 @@ See [Teardown](teardown.md).
 
 - [Power](power.md)
 - [Teardown](teardown.md)
-- [Watercooling stub](../modifications/watercooling.md)
+- [Watercooling](../modifications/watercooling.md)
 - [Prerequisites](../getting-started/prerequisites.md)
+
+## References
+
+References and further info from:
+
+- https://170th-street.gitbook.io/hx/modifications/watercooling-installation
+- https://170th-street.gitbook.io/hx/hardware/teardown-guide
+- https://170th-street.gitbook.io/hx/hardware/full-specifications

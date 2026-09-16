@@ -59,7 +59,7 @@ With cmpunlocker installed on a matching open driver:
 - PCIe Gen2 becomes available in software
 - CUDA and OpenCL workloads stop looking like a 2008 GPU
 
-It Still Boots lab note (Home Performance link; full write-up TBD): an unlocked ~**64 GB** usable HBM card runs Qwen3.8-27B dense at about **212 tok/s** on a DFlash / vLLM-class stack, with a context-depth sweep in the roughly **219 / 181 / 141 / 109 / 77** class (~**61%** drop short→long). See [Performance](../performance/overview.md).
+It Still Boots lab note: unlocked ~**64 GB** usable HBM runs Qwen3.8-27B dense at about **212 tok/s** on a DFlash / vLLM-class stack, with a context-depth sweep in the roughly **219 / 181 / 141 / 109 / 77** class (~**61%** drop short→long). Full tables and method live on [Performance Overview](../performance/overview.md).
 
 ## Who this is for
 
@@ -93,10 +93,15 @@ Harder fit if you need Windows gaming APIs, plug-and-play enterprise support, NV
 - [Specifications](../hardware/specifications.md) for the full tables
 - [Unlock Overview](../linux-unlock/unlock-overview.md) once the card is cool and identified
 
-## Sources
+## References
 
-- [170th Street](https://170th-street.gitbook.io/hx)
-- [amoghmunikote/170th-Street](https://github.com/amoghmunikote/170th-Street)
-- [amoghmunikote/cmpunlocker](https://github.com/amoghmunikote/cmpunlocker)
-- [Consensus-Protocol/cmp170hx](https://github.com/Consensus-Protocol/cmp170hx)
-- [ServeTheHome Forums thread](https://forums.servethehome.com/index.php?threads/cmp-170hx-unlocked-and-measured-164-tflops-fp16-64gb-verified-and-how-to-tell-one-from-an-a100.56137/)
+References and further info from:
+
+- https://170th-street.gitbook.io/hx
+- https://170th-street.gitbook.io/hx/introduction/what-is-the-cmp-170hx
+- https://170th-street.gitbook.io/hx/introduction/history-and-timeline
+- https://170th-street.gitbook.io/hx/hardware/full-specifications
+- https://github.com/amoghmunikote/170th-Street
+- https://github.com/amoghmunikote/cmpunlocker
+- https://github.com/Consensus-Protocol/cmp170hx
+- https://forums.servethehome.com/index.php?threads/cmp-170hx-unlocked-and-measured-164-tflops-fp16-64gb-verified-and-how-to-tell-one-from-an-a100.56137/
