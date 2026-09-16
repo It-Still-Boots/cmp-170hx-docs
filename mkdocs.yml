@@ -1,0 +1,142 @@
+site_name: It Still Boots CMP 170HX
+site_description: It Still Boots documentation for the NVIDIA CMP 170HX: hardware, unlock path, cooling, and lab notes
+site_author: It Still Boots
+site_url: https://it-still-boots.github.io/cmp-170hx-docs/
+
+# Repository
+repo_name: It-Still-Boots/cmp-170hx-docs
+repo_url: https://github.com/It-Still-Boots/cmp-170hx-docs
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+  features:
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - navigation.tracking
+    - search.suggest
+    - search.highlight
+    - search.share
+    - toc.follow
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - content.action.edit
+    - content.action.view
+
+  icon:
+    repo: fontawesome/brands/github
+    logo: material/chip
+
+plugins:
+  - search:
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+  - tags
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      normalize_issue_symbols: true
+      repo_url_shorthand: true
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+nav:
+  - Home: index.md
+
+  - Getting Started:
+      - Introduction: getting-started/introduction.md
+      - Quick Start: getting-started/quick-start.md
+      - Prerequisites: getting-started/prerequisites.md
+
+  - Hardware:
+      - Specifications: hardware/specifications.md
+      - Power: hardware/power.md
+      - Cooling: hardware/cooling.md
+      - Teardown: hardware/teardown.md
+
+  - Modifications:
+      - PCIe Capacitor Mod: modifications/pcie-capacitor-mod.md
+      - Watercooling: modifications/watercooling.md
+
+  - BIOS & Host:
+      - Host BIOS: bios/host-bios.md
+
+  - Linux & Unlock:
+      - Unlock Overview: linux-unlock/unlock-overview.md
+
+  - Performance:
+      - Overview: performance/overview.md
+
+  - Troubleshooting:
+      - Common Issues: troubleshooting/common.md
+
+  - Community:
+      - Community: community/community.md
+
+  - Reference:
+      - Quick Reference: reference/quick-reference.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/It-Still-Boots/cmp-170hx-docs
+
+  generator: false
