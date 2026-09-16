@@ -1,4 +1,4 @@
-# It Still Boots: CMP 170HX docs
+# CMP 170HX Documentation
 
 Public MkDocs Material documentation for the **NVIDIA CMP 170HX** as used in the It Still Boots lab.
 

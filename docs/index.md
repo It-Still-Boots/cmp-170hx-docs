@@ -1,6 +1,6 @@
-# It Still Boots: CMP 170HX
+# CMP 170HX Documentation
 
-Documentation for the **NVIDIA CMP 170HX**, a GA100 mining card that the community has turned into a serious budget compute platform. This is the It Still Boots field guide: hardware facts, cooling and power, unlock path, and lab notes from a real unlocked box.
+Documentation for the **NVIDIA CMP 170HX**, a GA100 mining card that the community has turned into a serious budget compute platform. Hardware facts, cooling and power, unlock path, and lab notes from a real unlocked box.
 
 ## What is the CMP 170HX?
 
