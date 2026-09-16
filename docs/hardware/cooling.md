@@ -1,6 +1,6 @@
 # Cooling
 
-The CMP 170HX ships with a passive server heatsink. In a rack aisle with directed airflow that is a feature. On a desk, it is a thermal incident waiting for a CUDA kernel. This page summarizes the safe operating story; full waterblock screw-by-screw steps stay on 170th Street until It Still Boots drafts [watercooling.md](../modifications/watercooling.md).
+The CMP 170HX ships with a passive server heatsink. In a rack aisle with directed airflow that is a feature. On a desk, it is a thermal incident waiting for a CUDA kernel. This page summarizes the safe operating story. Product options (Bykski / Astralcooler / Shyrrik / Corsair-adapted AIO) live under [Watercooling](../modifications/watercooling.md). Screw-by-screw install warnings stay on 170th Street.
 
 Sources: [Watercooling Installation](https://170th-street.gitbook.io/hx/modifications/watercooling-installation), [Teardown Guide](https://170th-street.gitbook.io/hx/hardware/teardown-guide), [Full Specifications](https://170th-street.gitbook.io/hx/hardware/full-specifications).
 
@@ -45,7 +45,7 @@ Recommended block from 170th Street community validation:
 
 Performance anecdote from 170th Street (paraphrased): around **180 W** on a non-FMA FP32 workload, a **360 mm** radiator with fans at minimum speed held roughly **45 °C**. Treat that as a qualitative datapoint, then log your own loop.
 
-Full procedure (pads, power-cable wrestling, backplate spacing with the saved PCIe bracket): [170th Street Watercooling Installation](https://170th-street.gitbook.io/hx/modifications/watercooling-installation). It Still Boots stub: [watercooling.md](../modifications/watercooling.md).
+Product buyer guide: [Watercooling](../modifications/watercooling.md). Full procedure (pads, power-cable wrestling, backplate spacing with the saved PCIe bracket): [170th Street Watercooling Installation](https://170th-street.gitbook.io/hx/modifications/watercooling-installation).
 
 ## Monitoring checklist
 

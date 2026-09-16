@@ -10,6 +10,7 @@ edit_uri: edit/main/docs/
 
 theme:
   name: material
+  custom_dir: overrides
   palette:
     - media: "(prefers-color-scheme)"
       toggle:
@@ -34,6 +35,7 @@ theme:
     - navigation.instant
     - navigation.instant.prefetch
     - navigation.sections
+    - navigation.indexes
     - navigation.top
     - navigation.footer
     - navigation.tracking
@@ -46,6 +48,7 @@ theme:
     - content.tabs.link
     - content.action.edit
     - content.action.view
+    - announce.dismiss
 
   icon:
     repo: fontawesome/brands/github
@@ -97,6 +100,9 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
+
+extra_css:
+  - stylesheets/extra.css
 
 nav:
   - Home: index.md

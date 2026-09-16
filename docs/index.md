@@ -20,12 +20,7 @@ Introduction-side compute splits (prefer these until Patrick resolves the Full S
 | 8 GB | 56 | 3584 | 224 |
 | 10 GB | 70 | 4480 | 280 |
 
-Quick infos:
-
-- Clocks: base **1140 MHz**, boost **1410 MHz**
-- Default TDP **250 W**, software max around **300 W**, idle roughly **30–40 W**
-- CUDA Compute Capability **8.0**. OpenCL works.
-- There are no display outputs and no DirectX / Vulkan / OpenGL / NVENC path.
+Clocks: base **1140 MHz**, boost **1410 MHz**. Default TDP **250 W**, software max around **300 W**, idle roughly **30–40 W**. CUDA Compute Capability **8.0**. OpenCL works. There are no display outputs and no DirectX / Vulkan / OpenGL / NVENC path.
 
 Community unlock tooling ([cmpunlocker](https://github.com/amoghmunikote/cmpunlocker)) restores memory geometry, lifts the FP32 FMA throttle, and enables PCIe Gen2 in software. Hardware lane width still needs the [PCIe capacitor mod](modifications/pcie-capacitor-mod.md) if you want Gen1 x16 (~4 GB/s) instead of stock Gen1 x4 (~1 GB/s).
 
