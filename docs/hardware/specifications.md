@@ -88,6 +88,7 @@ PCB note: reference designators match the A100 40GB PCIe family closely enough t
 | Stock electrical link | Gen1 x4 (~1 GB/s) |
 | After capacitor mod | Gen1 x16 (~4 GB/s) |
 | After software Gen unlock | Gen2 (width still whatever the caps allow) |
+| Gen3 | Work in progress |
 | NVLink | Connectors present, fuse-disabled |
 | Power connector | 1× 8-pin CPU/EPS-style via adapter |
 
