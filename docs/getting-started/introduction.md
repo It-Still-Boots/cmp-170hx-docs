@@ -40,7 +40,7 @@ Stock behavior is intentional lockdown layered on complete-enough silicon:
 6. **NVLink.** Connectors exist; fuses keep them dead.
 7. **Resizable BAR.** Present but capped at **64 MiB** stock.
 
-Combined stock PCIe is roughly **~1 GB/s** (Gen1 x4). Capacitor mod alone yields Gen1 x16 (~**4 GB/s**). Gen2 is independent and comes from the unlock tool.
+Combined stock PCIe is roughly **~1 GB/s** (Gen1 x4). Capacitor mod alone yields Gen1 x16 (**~4 GB/s**). Gen2 is independent and comes from the unlock tool.
 
 ## Why the card exists
 
@@ -59,7 +59,7 @@ With cmpunlocker installed on a matching open driver:
 - PCIe Gen2 becomes available in software
 - CUDA and OpenCL workloads stop looking like a 2008 GPU
 
-Lab headline on unlocked ~**64 GB** HBM: Nemotron-3.5-Lightning-30B-A3B W4A16 at **228 tok/s** (16k coding), batch **1,306 tok/s** aggregate at 32k×16, and **79%** decode retained at 128k versus 1k. Earlier Qwen3.8-27B DFlash ~212 tok/s remains in the matrix. Full tables and method live on [Performance Overview](../performance/overview.md).
+Lab headline on unlocked **~64 GB** HBM: Nemotron-3.5-Lightning-30B-A3B W4A16 at **228 tok/s** (16k coding), batch **1,306 tok/s** aggregate at 32k×16, and **79%** decode retained at 128k versus 1k. Earlier Qwen3.8-27B DFlash ~212 tok/s remains in the matrix. Full tables and method live on [Performance Overview](../performance/overview.md).
 
 ## Who this is for
 
@@ -75,7 +75,7 @@ Harder fit if you need Windows gaming APIs, plug-and-play enterprise support, NV
 ## Risks you should price in
 
 !!! danger "Thermal runaway"
-    GA100 leakage rises with temperature. Without coolant or strong airflow, temperatures above ~**80 °C** can run away. Dry-run limit: power off within ~**5 minutes**.
+    GA100 leakage rises with temperature. Without coolant or strong airflow, temperatures above **~80 °C** can run away. Dry-run limit: power off within **~5 minutes**.
 
 !!! warning "Experimental unlock"
     cmpunlocker patches kernel modules. Expect Secure Boot conflicts, DKMS priority traps, and breakage on routine driver upgrades. Read [Unlock Overview](../linux-unlock/unlock-overview.md) and the [Consensus-Protocol wiki](https://github.com/Consensus-Protocol/cmp170hx/wiki) before you treat a box as production.

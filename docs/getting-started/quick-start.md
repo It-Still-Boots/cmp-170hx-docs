@@ -3,7 +3,7 @@
 Fast path from sealed CMP 170HX to an unlocked Linux compute card. Read [Prerequisites](prerequisites.md) first so you are not improvising cooling or power mid-flight.
 
 !!! warning "Cooling is step zero"
-    Do not chase unlock scripts on a dry passive heatsink in still air. Confirm airflow or a filled water loop before sustained load. Thermal runaway above ~**80 °C** is real.
+    Do not chase unlock scripts on a dry passive heatsink in still air. Confirm airflow or a filled water loop before sustained load. Thermal runaway above **~80 °C** is real.
 
 ## Lab performance headline
 
@@ -48,7 +48,7 @@ Exact menu names vary by vendor. Capture them on [Host BIOS](../bios/host-bios.m
 
 - Seat the **8-pin CPU/EPS-style** adapter firmly. This is the stock power feed.
 - Aim a high-static-pressure fan at the passive heatsink, or complete waterblock install first.
-- PSU: plan for **250 W** default TDP with headroom to ~**300 W** software limit, plus host CPU and drives.
+- PSU: plan for **250 W** default TDP with headroom to **~300 W** software limit, plus host CPU and drives.
 
 !!! danger "Dry-run limit"
     If you ever power the card without coolant in a waterblock, shut down within about **five minutes**.

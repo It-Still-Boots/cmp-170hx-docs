@@ -13,7 +13,7 @@ Twelve of the sixteen PCIe data lanes are missing their AC coupling capacitors o
 | Width | 12 of 16 lanes lack AC coupling caps | Solder **24× 0402 0.22 µF** |
 | Generation | Firmware Gen1 lock | cmpunlocker Gen2 path ([Unlock Overview](../linux-unlock/unlock-overview.md)) |
 
-After caps only: **Gen1 x16** (~**4 GB/s**). After caps **and** Gen2 unlock: Gen2 x16 when the host and card both cooperate (field reports exist; treat Gen2×16 as higher variance than Gen1×16).
+After caps only: **Gen1 x16** (about **4 GB/s**). After caps **and** Gen2 unlock: Gen2 x16 when the host and card both cooperate (field reports exist; treat Gen2×16 as higher variance than Gen1×16).
 
 ![PCIe edge of a CMP 170HX with the AC coupling capacitor pad area marked](../assets/modifications/pcie-cap-mod-pads.jpg)
 

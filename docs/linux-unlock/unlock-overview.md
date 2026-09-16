@@ -11,7 +11,7 @@ Patched **nvidia-open** kernel modules reconfigure the GPU during GSP boot. Noth
 | Capability | Result |
 |------------|--------|
 | Memory geometry | **8 GB** stock (`0x20C2`) → **64 GB** unlocked; **10 GB** stock (`0x2082`) → **40 GB** unlocked |
-| SM / FP32 FMA throttle | Stock ~**0.39–0.41 TFLOPS** class FP32 climbs toward ~**12–13 TFLOPS** unlocked (measure your own card) |
+| SM / FP32 FMA throttle | Stock **~0.39–0.41 TFLOPS** class FP32 climbs toward **~12–13 TFLOPS** unlocked (measure your own card) |
 | PCIe Gen | Software path to **Gen2** (5.0 GT/s) when the build includes Gen2 patches |
 | BAR1 | Widened toward full VRAM mapping (needs host [Above 4G Decoding](../bios/host-bios.md)) |
 | Persistence | Survives reboot as long as the patched modules stay preferred by the module loader |

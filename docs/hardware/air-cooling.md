@@ -11,8 +11,8 @@ Sources: [Teardown Guide](https://170th-street.gitbook.io/hx/hardware/teardown-g
 | Stock cooler | Passive dual-slot copper/aluminum server sink |
 | Idle power | ~30–40 W (easy) |
 | Load envelope | 250 W default, up to ~300 W software |
-| Runaway threshold | Above ~**80 °C**, leakage can feed temperature in a positive loop |
-| Dry-run rule | Power off within ~**5 minutes** if the card has no coolant / no real airflow |
+| Runaway threshold | Above **~80 °C**, leakage can feed temperature in a positive loop |
+| Dry-run rule | Power off within **~5 minutes** if the card has no coolant / no real airflow |
 
 !!! danger "Thermal runaway"
     GA100 leakage rises with temperature. The watercooling install guide warns that dry-running without coolant is a short experiment only: shut down within about five minutes, and treat temperatures above ~80 °C as an emergency stop.

@@ -16,11 +16,11 @@ Compute (Full Specs, both SKUs): **70 SM / 4480 CUDA / 280 tensor**. See [Specif
 | Item | Value |
 |------|-------|
 | Default TDP | **250 W** |
-| Software ceiling | ~**300 W** |
-| Idle GPU | ~**30–40 W** |
+| Software ceiling | **~300 W** |
+| Idle GPU | **~30–40 W** |
 | Connector | **1× 8-pin CPU/EPS-style** via adapter |
-| Thermal hard stop | ~**80 °C** until the loop/air path is proven |
-| Dry-run without coolant | Power off within ~**5 minutes** |
+| Thermal hard stop | **~80 °C** until the loop/air path is proven |
+| Dry-run without coolant | Power off within **~5 minutes** |
 
 ## PCIe layers
 

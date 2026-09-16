@@ -9,8 +9,8 @@ Sources: [Full Specifications](https://170th-street.gitbook.io/hx/hardware/full-
 | Item | Value |
 |------|-------|
 | Default TDP | **250 W** |
-| Software max power limit | ~**300 W** |
-| Idle (typical) | ~**30–40 W** |
+| Software max power limit | **~300 W** |
+| Idle (typical) | **~30–40 W** |
 | Stock connector | **1× 8-pin CPU/EPS-style** via adapter |
 | Slot power | Do not rely on the slot alone for load |
 

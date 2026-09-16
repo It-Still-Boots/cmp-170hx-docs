@@ -33,8 +33,8 @@ Workstation and used server boards are both fair game. Document your exact BIOS 
 | Budget item | Guidance |
 |-------------|----------|
 | GPU TDP default | **250 W** |
-| Software power ceiling | ~**300 W** |
-| Idle GPU | ~**30–40 W** |
+| Software power ceiling | **~300 W** |
+| Idle GPU | **~30–40 W** |
 | System headroom | Size the PSU for GPU + CPU + drives with ≥20% margin |
 
 !!! warning "Connector shape"

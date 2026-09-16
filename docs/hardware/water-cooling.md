@@ -19,7 +19,7 @@ Recommended block from community validation:
     Unpopulated IC footprints **must** receive thermal pads before the block goes on. Waterblock contact pillars will short exposed copper if a footprint is left bare. This is the most common permanent-damage mode during install.
 
 !!! warning "Thermal runaway"
-    GA100 leakage climbs with temperature. Dry-run without coolant only for a short bring-up, then power off within about **five minutes**. Treat temperatures above ~**80 °C** as an emergency stop.
+    GA100 leakage climbs with temperature. Dry-run without coolant only for a short bring-up, then power off within about **five minutes**. Treat temperatures above **~80 °C** as an emergency stop.
 
 Performance anecdote from community validation (paraphrased): around **180 W** on a non-FMA FP32 workload, a **360 mm** radiator with fans at minimum speed held roughly **45 °C**. Treat that as a qualitative datapoint, then log your own loop.
 
@@ -39,7 +39,7 @@ FormulaMod lists the kit with **120 mm**, **240 mm**, and **360 mm** radiators (
 
 | Radiator | Fans (typical) | Notes |
 |----------|----------------|-------|
-| **360 mm** | 3× 120 mm | Default recommendation for an unlocked 170HX at 250–300 W. The qualitative datapoint above (~**45 °C** at ~**180 W** on a 360 mm with fans at minimum) sits in this class. |
+| **360 mm** | 3× 120 mm | Default recommendation for an unlocked 170HX at 250–300 W. The qualitative datapoint above (**~45 °C** at **~180 W** on a 360 mm with fans at minimum) sits in this class. |
 | **240 mm** | 2× 120 mm | Possible in a tight case if airflow on the rad is strong and you watch temps under real LLM / CUDA load. Leave headroom. |
 | **120 mm** | 1× 120 mm | **Most likely not enough** for sustained unlocked load on this card. Fine for photos and maybe idle / light probes; treat it as undersized for 24/7 inference. |
 

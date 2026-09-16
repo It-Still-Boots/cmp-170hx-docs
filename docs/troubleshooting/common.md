@@ -53,7 +53,7 @@ On Ubuntu-class hosts, DKMS under `updates/dkms/` often beats `updates/cmpunlock
 
 **Likely causes:** Passive sink in still air; dry waterblock; power limit raised to ~300 W before cooling is proven.
 
-**First checks:** Aim high-static-pressure fans through the fins, or fill the loop. Lab hard stop near **~80 °C**. Dry-run without coolant: power off within ~**5 minutes**. See [Air Cooling](../hardware/air-cooling.md) / [Water Cooling](../hardware/water-cooling.md).
+**First checks:** Aim high-static-pressure fans through the fins, or fill the loop. Lab hard stop near **~80 °C**. Dry-run without coolant: power off within **~5 minutes**. See [Air Cooling](../hardware/air-cooling.md) / [Water Cooling](../hardware/water-cooling.md).
 
 ## Waterblock short from missing pads
 

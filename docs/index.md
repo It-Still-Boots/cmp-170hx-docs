@@ -104,7 +104,7 @@ Primary community sources: [hardware & mod docs](https://170th-street.gitbook.io
 Before you bolt this into a host, treat these as hard gates.
 
 !!! danger "Cooling before load"
-    Passive heatsink needs strong directed airflow, or replace it with water. Thermal runaway above ~**80 °C** is a documented failure mode. Dry-run without coolant: power off within ~**5 minutes**.
+    Passive heatsink needs strong directed airflow, or replace it with water. Thermal runaway above **~80 °C** is a documented failure mode. Dry-run without coolant: power off within **~5 minutes**.
 
 !!! warning "Host BIOS"
     You need a host that can train a PCIe link to a Gen1 (then Gen2 after unlock) endpoint with Above 4G Decoding enabled for large BAR work. Checklist and setting names: [Host BIOS](bios/host-bios.md).
