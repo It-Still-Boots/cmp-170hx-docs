@@ -15,9 +15,11 @@ Two production SKUs show up in the wild:
 | 8 GB | `0x20C2` | `0x1585` | GA100-105F-A1 | **64 GB** | 4096-bit | ~1.49 TB/s |
 | 10 GB | `0x2082` | `0x1557` | GA100-105A-A1 | **40 GB** | 5120-bit | ~1.56 TB/s |
 
-Compute (Full Specs, both SKUs): **70 SM / 4480 CUDA / 280 tensor**.
-
-Clocks: base **1140 MHz**, boost **1410 MHz**. Default TDP **250 W**, software max around **300 W**, idle roughly **30–40 W**. CUDA Compute Capability **8.0**. OpenCL works. There are no display outputs and no DirectX / Vulkan / OpenGL / NVENC path.
+- **Compute** (Full Specs, both SKUs): **70 SM / 4480 CUDA / 280 tensor**
+- **Clocks:** base **1140 MHz**, boost **1410 MHz**
+- **Power:** default TDP **250 W**, software max around **300 W**, idle roughly **30–40 W**
+- **APIs:** CUDA Compute Capability **8.0**, OpenCL
+- **Display / graphics:** no display outputs; no DirectX / Vulkan / OpenGL / NVENC path
 
 Community unlock tooling ([cmpunlocker](https://github.com/amoghmunikote/cmpunlocker)) restores memory geometry, lifts the FP32 FMA throttle, and enables PCIe Gen2 in software. Hardware lane width still needs the [PCIe capacitor mod](modifications/pcie-capacitor-mod.md) if you want Gen1 x16 (~4 GB/s) instead of stock Gen1 x4 (~1 GB/s).
 
