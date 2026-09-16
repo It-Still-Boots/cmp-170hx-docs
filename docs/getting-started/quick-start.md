@@ -5,6 +5,10 @@ Fast path from sealed CMP 170HX to an unlocked Linux compute card. Read [Prerequ
 !!! warning "Cooling is step zero"
     Do not chase unlock scripts on a dry passive heatsink in still air. Confirm airflow or a filled water loop before sustained load. Thermal runaway above ~**80 °C** is real.
 
+## Lab performance headline
+
+Unlocked 64 GiB lab benches lead with Nemotron-3.5-Lightning-30B-A3B W4A16 at **228 tok/s** (16k coding), batch **1,306 tok/s** aggregate at 32k×16, and **79%** decode retained at 128k versus 1k. Earlier Qwen3.8-27B DFlash ~212 tok/s is still in the matrix. Details: [Performance Overview](../performance/overview.md).
+
 ## Setup checklist
 
 ### Step 1: Identify the SKU
@@ -134,7 +138,7 @@ Only after unlock verification:
 
 ### Step 9: Run a real workload
 
-Point your LLM stack at the unlocked device. It Still Boots lab target for later Performance docs: Qwen3.8-27B dense around **212 tok/s** with DFlash / vLLM-class serving on a ~64 GB card, plus the context-depth curve. Do not invent CSVs here; see [Performance](../performance/overview.md).
+Point your LLM stack at the unlocked device. It Still Boots lab headline: Nemotron W4A16 **228 tok/s** (16k coding), batch **1,306 tok/s**, **79%** retained at 128k; earlier Qwen3.8-27B DFlash ~212 tok/s sits in the matrix. Do not invent CSVs here; see [Performance](../performance/overview.md).
 
 ---
 

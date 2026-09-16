@@ -14,17 +14,17 @@ Two confirmed production SKUs:
 | PCI Device ID | `0x20C2` | `0x2082` |
 | PCI Subsystem ID | `0x1585` | `0x1557` |
 | Die marking | GA100-105F-A1 | GA100-105A-A1 |
-| SMs (Introduction) | 56 | 70 |
-| CUDA cores (Introduction) | 3584 | 4480 |
-| Tensor cores (Introduction) | 224 | 280 |
+| SMs (Full Specs) | 70 | 70 |
+| CUDA cores (Full Specs) | 4480 | 4480 |
+| Tensor cores (Full Specs) | 280 | 280 |
 | Memory bus | 4096-bit | 5120-bit |
 | Bandwidth (approx.) | ~1.49 TB/s | ~1.56 TB/s |
 | Unlocked capacity | **64 GB** | **40 GB** |
 
 Shared clocks and power envelope: base **1140 MHz**, boost **1410 MHz**, default TDP **250 W**, software max around **300 W**, idle about **30–40 W**.
 
-!!! info "Prefer the Introduction SM split"
-    170th Street's Introduction page is the source for the 56 vs 70 SM split used above. Their Full Specifications Compute table currently lists SM **70** only. Flagged on the [specifications](../hardware/specifications.md) page for Patrick to resolve.
+!!! info "Compute counts"
+    It Still Boots locks both SKUs to Full Specs: **70 SM / 4480 CUDA / 280 tensor**. Memory bus, bandwidth, and unlocked capacity still differ by SKU.
 
 Sources: [What is the CMP 170HX?](https://170th-street.gitbook.io/hx/introduction/what-is-the-cmp-170hx), [Full Specifications](https://170th-street.gitbook.io/hx/hardware/full-specifications), [170th-Street repo](https://github.com/amoghmunikote/170th-Street).
 
@@ -59,7 +59,7 @@ With cmpunlocker installed on a matching open driver:
 - PCIe Gen2 becomes available in software
 - CUDA and OpenCL workloads stop looking like a 2008 GPU
 
-It Still Boots lab note: unlocked ~**64 GB** usable HBM runs Qwen3.8-27B dense at about **212 tok/s** on a DFlash / vLLM-class stack, with a context-depth sweep in the roughly **219 / 181 / 141 / 109 / 77** class (~**61%** drop short→long). Full tables and method live on [Performance Overview](../performance/overview.md).
+It Still Boots lab headline on unlocked ~**64 GB** HBM: Nemotron-3.5-Lightning-30B-A3B W4A16 at **228 tok/s** (16k coding), batch **1,306 tok/s** aggregate at 32k×16, and **79%** decode retained at 128k versus 1k. Earlier Qwen3.8-27B DFlash ~212 tok/s remains in the matrix. Full tables and method live on [Performance Overview](../performance/overview.md).
 
 ## Who this is for
 

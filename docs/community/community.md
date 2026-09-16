@@ -2,13 +2,13 @@
 
 It Still Boots documents what we run in the lab: unlocked CMP 170HX boxes, cooling and power notes, and the numbers we publish under [Performance](../performance/overview.md). The reverse engineering, unlock tooling, and board-level mods came from other people. Use this page to find them, ask questions where they already hang out, and contribute fixes back to these docs.
 
-There is **no stable It Still Boots Discord invite** yet. When one exists, it will land here. Until then, use the upstream Discord / forums linked below, or open a GitHub issue / PR on this repo.
+Ask questions where the upstream projects already hang out, or open a GitHub issue / PR on this repo.
 
 ## Where to ask
 
 | Topic | Best place |
 |-------|------------|
-| Unlock install failures, module priority, driver pin | [amoghmunikote/cmpunlocker](https://github.com/amoghmunikote/cmpunlocker) issues and their Discord (invite on that README) |
+| Unlock install failures, module priority, driver pin | [amoghmunikote/cmpunlocker](https://github.com/amoghmunikote/cmpunlocker) issues |
 | Register-level / Falcon / geometry deep dives | [Consensus-Protocol/cmp170hx wiki](https://github.com/Consensus-Protocol/cmp170hx/wiki) and that project's tracker |
 | PCB mods, waterblock pads, teardown | [170th Street](https://170th-street.gitbook.io/hx) / [amoghmunikote/170th-Street](https://github.com/amoghmunikote/170th-Street) |
 | Unlocked measurements, “is this an A100?” | [ServeTheHome Forums thread](https://forums.servethehome.com/index.php?threads/cmp-170hx-unlocked-and-measured-164-tflops-fp16-64gb-verified-and-how-to-tell-one-from-an-a100.56137/) |

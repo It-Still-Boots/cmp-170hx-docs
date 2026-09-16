@@ -15,16 +15,13 @@ Two production SKUs show up in the wild:
 | 8 GB | `0x20C2` | `0x1585` | GA100-105F-A1 | **64 GB** | 4096-bit | ~1.49 TB/s |
 | 10 GB | `0x2082` | `0x1557` | GA100-105A-A1 | **40 GB** | 5120-bit | ~1.56 TB/s |
 
-Introduction-side compute splits (prefer these until Patrick resolves the Full Specs discrepancy):
-
-| SKU | SMs | CUDA cores | Tensor cores |
-|-----|-----|------------|--------------|
-| 8 GB | 56 | 3584 | 224 |
-| 10 GB | 70 | 4480 | 280 |
+Compute (Full Specs, both SKUs): **70 SM / 4480 CUDA / 280 tensor**.
 
 Clocks: base **1140 MHz**, boost **1410 MHz**. Default TDP **250 W**, software max around **300 W**, idle roughly **30–40 W**. CUDA Compute Capability **8.0**. OpenCL works. There are no display outputs and no DirectX / Vulkan / OpenGL / NVENC path.
 
 Community unlock tooling ([cmpunlocker](https://github.com/amoghmunikote/cmpunlocker)) restores memory geometry, lifts the FP32 FMA throttle, and enables PCIe Gen2 in software. Hardware lane width still needs the [PCIe capacitor mod](modifications/pcie-capacitor-mod.md) if you want Gen1 x16 (~4 GB/s) instead of stock Gen1 x4 (~1 GB/s).
+
+It Still Boots lab headline (unlocked 64 GiB): Nemotron-3.5-Lightning-30B-A3B W4A16 at **228 tok/s** (16k coding), batch **1,306 tok/s** aggregate at 32k×16, and **79%** decode retained at 128k versus 1k. Earlier Qwen3.8-27B DFlash ~212 tok/s is still in the matrix. Full tables: [Performance Overview](performance/overview.md).
 
 Primary community sources: [170th Street](https://170th-street.gitbook.io/hx) and the [170th-Street GitHub mirror](https://github.com/amoghmunikote/170th-Street). Deep unlock reference: [Consensus-Protocol/cmp170hx](https://github.com/Consensus-Protocol/cmp170hx/wiki).
 
@@ -42,9 +39,6 @@ Primary community sources: [170th Street](https://170th-street.gitbook.io/hx) an
 
 !!! warning "Cooling is load-bearing"
     The stock cooler is a passive server brick. Dry-running without coolant or adequate airflow risks thermal runaway above about **80 °C**. Power off within roughly **five minutes** if you ever fire the card without a real cooling path.
-
-!!! info "SM count discrepancy (Patrick)"
-    The 170th Street [Introduction](https://170th-street.gitbook.io/hx/introduction/what-is-the-cmp-170hx) splits **56 SM / 3584 CUDA / 224 tensor** (8 GB) versus **70 SM / 4480 CUDA / 280 tensor** (10 GB). The [Full Specifications](https://170th-street.gitbook.io/hx/hardware/full-specifications) Compute table lists **SM 70** without splitting SKUs. It Still Boots prefers the Introduction split until this is resolved.
 
 !!! tip "PCIe width and Gen are separate knobs"
     Soldering **24× 0402 0.22 µF** caps (for example Samsung CL05B224KO5NNNC) gets you Gen1 x16 (~4 GB/s). That alone does not raise link generation. Gen2 is a software unlock. Details live under [PCIe capacitor mod](modifications/pcie-capacitor-mod.md) and [Linux & Unlock](linux-unlock/unlock-overview.md).

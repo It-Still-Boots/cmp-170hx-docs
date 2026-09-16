@@ -1,6 +1,6 @@
 # Hardware Specifications
 
-Single-page reference for the NVIDIA CMP 170HX as It Still Boots uses it in the lab. Figures below prefer 170th Street’s Introduction for SKU-split compute counts, and Full Specifications for clocks, power, APIs, and memory geometry. Where those pages disagree, the discrepancy is called out explicitly.
+Single-page reference for the NVIDIA CMP 170HX as It Still Boots uses it in the lab. Compute counts follow 170th Street Full Specifications (**70 SM / 4480 CUDA / 280 tensor** for both SKUs). Clocks, power, APIs, memory geometry, and bandwidth come from the same Full Specs / locked fact sheet.
 
 Primary sources: [Full Specifications](https://170th-street.gitbook.io/hx/hardware/full-specifications), [What is the CMP 170HX?](https://170th-street.gitbook.io/hx/introduction/what-is-the-cmp-170hx), [170th-Street GitHub](https://github.com/amoghmunikote/170th-Street).
 
@@ -36,27 +36,19 @@ Primary sources: [Full Specifications](https://170th-street.gitbook.io/hx/hardwa
 
 ## Compute
 
-Introduction-side split (It Still Boots preferred):
-
-| Property | 8 GB SKU | 10 GB SKU |
-|----------|----------|-----------|
-| Streaming Multiprocessors | 56 | 70 |
-| CUDA cores (64 per SM) | 3584 | 4480 |
-| Tensor cores (4 per SM) | 224 | 280 |
-
-Shared clock domain from Full Specs:
+Full Specs compute (both SKUs):
 
 | Property | Value |
 |----------|-------|
+| Streaming Multiprocessors | 70 |
+| CUDA cores (64 per SM) | 4480 |
+| Tensor cores (4 per SM) | 280 |
 | Base clock | 1140 MHz |
 | Boost clock | 1410 MHz |
 | L1 cache | 192 KB per SM |
 | L2 cache | 32 MB (32768 KB) |
-| TMUs | 280 (Full Specs table; listed without SKU split) |
-| ROPs | 128 (Full Specs table; listed without SKU split) |
-
-!!! warning "SM count discrepancy (Patrick to resolve)"
-    170th Street **Introduction** splits **56 SM / 3584 CUDA / 224 tensor** (8 GB) vs **70 SM / 4480 CUDA / 280 tensor** (10 GB). The **Full Specifications** Compute table lists **SM 70 / 4480 CUDA / 280 tensor** with no SKU split. It Still Boots documents both and prefers the Introduction split until Patrick confirms which table wins for marketing and for `nvidia-smi` / CUDA device query cross-checks.
+| TMUs | 280 |
+| ROPs | 128 |
 
 ## Memory
 
@@ -71,8 +63,7 @@ Shared clock domain from Full Specs:
 | ECC | Disabled | Disabled |
 | Resizable BAR | Present, limited to **64 MiB** stock | Present, limited to **64 MiB** stock |
 
-!!! tip "Bandwidth note"
-    Introduction text sometimes quotes a higher theoretical figure for the 10 GB part (~1865 GB/s in one paragraph). Full Specs lists ~1.56 TB/s. It Still Boots uses **~1.49 / ~1.56 TB/s** from Full Specs / the locked fact sheet until someone re-derives from measured clocks.
+Locked bandwidth figures: **~1.49 TB/s** (8 GB SKU) and **~1.56 TB/s** (10 GB SKU).
 
 ## Performance (theoretical vs unlocked)
 

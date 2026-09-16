@@ -9,7 +9,7 @@ One-page cheat sheet for the CMP 170HX lab desk. For narrative context see [Intr
 | 8 GB | `0x20C2` (`10de:20c2`) | `0x1585` | **64 GB** (65536 MiB) |
 | 10 GB | `0x2082` (`10de:2082`) | `0x1557` | **40 GB** (40960 MiB) |
 
-SM split It Still Boots prefers (Introduction): **56 SM / 3584 CUDA / 224 tensor** (8 GB) vs **70 SM / 4480 CUDA / 280 tensor** (10 GB). Full Specs still lists SM 70 without a SKU split; flagged open on [Specifications](../hardware/specifications.md).
+Compute (Full Specs, both SKUs): **70 SM / 4480 CUDA / 280 tensor**. See [Specifications](../hardware/specifications.md).
 
 ## Power and cooling limits
 
