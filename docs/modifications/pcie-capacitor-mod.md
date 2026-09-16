@@ -15,6 +15,10 @@ Twelve of the sixteen PCIe data lanes are missing their AC coupling capacitors o
 
 After caps only: **Gen1 x16** (~**4 GB/s**). After caps **and** Gen2 unlock: Gen2 x16 when the host and card both cooperate (field reports exist; treat Gen2×16 as higher variance than Gen1×16).
 
+![PCIe edge of a CMP 170HX with the AC coupling capacitor pad area marked](../assets/modifications/pcie-cap-mod-pads.jpg)
+
+Empty AC coupling pads sit just inland of the gold fingers on the back of the board (marked above). Each missing differential pair needs two **0402** caps.
+
 ## Parts
 
 | Item | Spec |
