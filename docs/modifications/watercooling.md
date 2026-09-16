@@ -57,7 +57,7 @@ Pick the SKU that matches how many boards you are cooling. A dual-block 480 mm k
 
 - [AliExpress listing](https://www.aliexpress.com/item/1005012960080788.html)
 
-*Product photo from the AliExpress listing will sit here once the gallery image is saved.*
+![Shyrrik A100 / CMP 170HX full-cover waterblock](../assets/watercooling/shyrrik-waterblock.jpg)
 
 This is a **cold plate**, not a complete AIO by itself. You still need pump, radiator, fittings, and coolant (or an AIO rad kit sold with that block).
 
@@ -69,7 +69,7 @@ There is a **240 mm** kit sold as a **Corsair-style CPU AIO adapted** onto an A1
 
 - [AliExpress listing](https://www.aliexpress.com/item/1005012990720684.html)
 
-*Product photo from the AliExpress listing will sit here once the gallery image is saved.*
+*No redistributable product photo found outside AliExpress (listing is captcha-walled from here). Use the link above for gallery shots.*
 
 Treat this as a **240 mm** thermal budget (same caution as the Bykski 240 mm row above). Verify seller photos against your PCB, check pump / fitting quality, and log temps under unlock-level load before you trust it overnight.
 
