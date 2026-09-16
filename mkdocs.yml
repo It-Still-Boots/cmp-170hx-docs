@@ -1,5 +1,5 @@
 site_name: It Still Boots CMP 170HX
-site_description: It Still Boots documentation for the NVIDIA CMP 170HX: hardware, unlock path, cooling, and lab notes
+site_description: "It Still Boots documentation for the NVIDIA CMP 170HX: hardware, unlock path, cooling, and lab notes"
 site_author: It Still Boots
 site_url: https://it-still-boots.github.io/cmp-170hx-docs/
 
