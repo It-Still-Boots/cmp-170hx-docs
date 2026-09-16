@@ -36,6 +36,17 @@ It Still Boots lab setup for desk bring-up: a **120 mm** centrifugal blower duct
 
 This is enough for unlock verification and light load. Log temperatures under your real CUDA / LLM workload before you trust it overnight. Water is still the quieter long-term path for sustained 250–300 W.
 
+### Opening the heatsink shroud (in progress)
+
+!!! info "Waiting for more lab data"
+    Same idea as the BC-250 community fin-access mods: open or remove the outer shroud so the dense heatsink fins see real airflow instead of baking under a closed cover. Some builders in China are already running CMP 170HX boards this way. It Still Boots expects it to work; we are still collecting temperature logs under unlock-level load before calling it a proven daily setup.
+
+![CMP 170HX stock heatsink with shroud opened to expose the fin stack](../assets/cooling/heatsink-fins-open-1.jpg)
+
+![CMP 170HX heatsink fins exposed after opening the outer case](../assets/cooling/heatsink-fins-open-2.jpg)
+
+Pair this with directed fans or the blower+shroud path above. Do not treat an open cover in still room air as enough cooling for a 250–300 W sustained run.
+
 !!! tip "Server chassis"
     A 2U/4U chassis with GPU-directed fans is the stock design intent. If you already own that airflow, you can defer watercooling.
 
