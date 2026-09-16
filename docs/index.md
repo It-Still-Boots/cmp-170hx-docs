@@ -87,7 +87,7 @@ Primary community sources: [170th Street](https://170th-street.gitbook.io/hx) an
 
     ---
 
-    It Still Boots lab benches TBD: unlocked ~64 GB HBM card hitting about **212 tok/s** on Qwen3.8-27B with a DFlash / vLLM-class stack, plus a context-depth curve (roughly 219 / 181 / 141 / 109 / 77 class figures, about a **61%** drop from short to long). Reproduce steps land later.
+    Unlocked 64 GiB CMP 170HX lab benches: Nemotron W4A16 at **228 tok/s** (16k coding) and **1,306 tok/s** aggregate batch at 32k×16, with **79%** decode retained at 128k versus 1k.
 
     [:octicons-arrow-right-24: Performance](performance/overview.md)
 
