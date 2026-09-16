@@ -26,6 +26,16 @@ Use this for bring-up and light unlock verification.
 - Watch `nvidia-smi` temperature while you run a short probe, then back off if the curve climbs without plateau.
 - Keep dust out of the fins; mining-farm residue is common on surplus cards.
 
+### 120 mm blower + 3D-printed shroud
+
+It Still Boots lab setup for desk bring-up: a **120 mm** centrifugal blower ducted onto the stock passive sink through a printed shroud. The blower we used is [this 120 mm unit on Amazon AU](https://www.amazon.com.au/dp/B076X11CT6). Print a shroud that seals against the fin stack so the air actually goes through the heatsink instead of spilling around the sides.
+
+![CMP 170HX with 120 mm blower and 3D-printed shroud on the stock sink](../assets/cooling/blower-shroud-1.jpg)
+
+![Side view of the 120 mm blower ducted onto the CMP 170HX passive heatsink](../assets/cooling/blower-shroud-2.jpg)
+
+This is enough for unlock verification and light load. Log temperatures under your real CUDA / LLM workload before you trust it overnight. Water is still the quieter long-term path for sustained 250–300 W.
+
 !!! tip "Server chassis"
     A 2U/4U chassis with GPU-directed fans is the stock design intent. If you already own that airflow, you can defer watercooling.
 
@@ -79,3 +89,4 @@ References and further info from:
 - https://170th-street.gitbook.io/hx/modifications/watercooling-installation
 - https://170th-street.gitbook.io/hx/hardware/teardown-guide
 - https://170th-street.gitbook.io/hx/hardware/full-specifications
+- https://www.amazon.com.au/dp/B076X11CT6
