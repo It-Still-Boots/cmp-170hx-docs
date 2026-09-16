@@ -4,6 +4,8 @@ Documentation for the **NVIDIA CMP 170HX**, a GA100 mining card that the communi
 
 ## What is the CMP 170HX?
 
+![Bare CMP 170HX PCB with GA100 die visible under thermal paste](assets/cmp-170hx-ga100-die.jpg)
+
 The CMP 170HX is an NVIDIA-built Cryptocurrency Mining Processor card from 2021. Under the heatsink sits the same GA100 silicon family as the A100 datacenter GPU. NVIDIA sold it as Ethereum mining hardware with compute, memory geometry, and PCIe deliberately clamped. The PCB matches the A100 40GB PCIe reference designators closely enough that A100 schematics and waterblocks map onto it.
 
 Two production SKUs show up in the wild:
