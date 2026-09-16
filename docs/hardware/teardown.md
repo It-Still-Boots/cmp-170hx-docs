@@ -1,8 +1,8 @@
 # Teardown
 
-Summary of what a CMP 170HX teardown involves, with links to the step-by-step upstream guide. This page does **not** invent screw counts or motion paths beyond what that guide documents.
+Summary of what a CMP 170HX teardown involves. This page does **not** invent screw counts or motion paths beyond the linked procedure.
 
-**Canonical procedure:** [Teardown Guide](https://170th-street.gitbook.io/hx/hardware/teardown-guide) · [GitHub mirror](https://github.com/amoghmunikote/170th-Street)
+**Step-by-step with photos:** [Teardown Guide](https://170th-street.gitbook.io/hx/hardware/teardown-guide) · [GitHub mirror](https://github.com/amoghmunikote/170th-Street)
 
 ## Why tear it down
 
@@ -39,14 +39,14 @@ The teardown guide’s numbered flow, paraphrased:
 9. Separate the heatsink. Paste often acts like glue; spudger technique with the card rotated so the sink cannot fall onto components.
 10. You now have a bare PCB ready for inspection, capacitor work, or waterblock prep.
 
-For torque sense, photos, and the video embeds, use the [canonical Teardown Guide](https://170th-street.gitbook.io/hx/hardware/teardown-guide). If a step is ambiguous, stop and open that page.
+For torque sense, photos, and the video embeds, open the Teardown Guide linked above. If a step is ambiguous, stop and use that page.
 
 ## After separation
 
 | Next goal | Go here |
 |-----------|---------|
-| Waterblock | [Water Cooling](water-cooling.md) → [Watercooling Installation](https://170th-street.gitbook.io/hx/modifications/watercooling-installation) |
-| Lane caps | [PCIe capacitor mod](../modifications/pcie-capacitor-mod.md) → [PCIe capacitor mod guide](https://170th-street.gitbook.io/hx/modifications/pcie-capacitor-mod) / [GitHub mod doc](https://github.com/amoghmunikote/170th-Street/blob/master/modifications/pcie-capacitor-mod.md) |
+| Waterblock | [Water Cooling](water-cooling.md) |
+| Lane caps | [PCIe capacitor mod](../modifications/pcie-capacitor-mod.md) |
 | Reassemble air cooler | Reverse the guide; renew paste; confirm spring washers return to the original screws |
 
 !!! danger "Waterblock pad reminder"

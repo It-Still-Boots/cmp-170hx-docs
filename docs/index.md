@@ -25,7 +25,7 @@ Community unlock tooling ([cmpunlocker](https://github.com/amoghmunikote/cmpunlo
 
 Lab headline (unlocked 64 GiB): Nemotron-3.5-Lightning-30B-A3B W4A16 at **228 tok/s** (16k coding), batch **1,306 tok/s** aggregate at 32k×16, and **79%** decode retained at 128k versus 1k. Earlier Qwen3.8-27B DFlash ~212 tok/s is still in the matrix. Full tables: [Performance Overview](performance/overview.md).
 
-Primary community sources: [170th Street](https://170th-street.gitbook.io/hx) and the [170th-Street GitHub mirror](https://github.com/amoghmunikote/170th-Street). Deep unlock reference: [Consensus-Protocol/cmp170hx](https://github.com/Consensus-Protocol/cmp170hx/wiki).
+Primary community sources: [hardware & mod docs](https://170th-street.gitbook.io/hx) and the [GitHub mirror](https://github.com/amoghmunikote/170th-Street). Deep unlock reference: [Consensus-Protocol/cmp170hx](https://github.com/Consensus-Protocol/cmp170hx/wiki). See also [Community](community/community.md).
 
 ### Key specifications (at a glance)
 

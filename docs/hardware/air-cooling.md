@@ -1,6 +1,6 @@
 # Air Cooling
 
-The CMP 170HX ships with a passive server heatsink. In a rack aisle with directed airflow that is a feature. On a desk, it is a thermal incident waiting for a CUDA kernel. This page covers forced air through the stock sink. Liquid options live under [Water Cooling](water-cooling.md). Screw-by-screw install warnings stay in the upstream [Teardown Guide](https://170th-street.gitbook.io/hx/hardware/teardown-guide).
+The CMP 170HX ships with a passive server heatsink. In a rack aisle with directed airflow that is a feature. On a desk, it is a thermal incident waiting for a CUDA kernel. This page covers forced air through the stock sink. Liquid options live under [Water Cooling](water-cooling.md).
 
 Sources: [Teardown Guide](https://170th-street.gitbook.io/hx/hardware/teardown-guide), [Full Specifications](https://170th-street.gitbook.io/hx/hardware/full-specifications).
 

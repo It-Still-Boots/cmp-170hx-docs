@@ -2,7 +2,7 @@
 
 Hardware fix for the CMP 170HX lane-width clamp. Stock firmware also locks the link to Gen1; that Gen lock is a **software** unlock. This page is only about the missing AC coupling capacitors that force **x4** width.
 
-Pad photos live in the upstream mod guide. Use the [PCIe capacitor mod guide](https://170th-street.gitbook.io/hx/modifications/pcie-capacitor-mod) (and the [GitHub mirror](https://github.com/amoghmunikote/170th-Street/blob/master/modifications/pcie-capacitor-mod.md)) for pad identification and screw-by-screw access. Amogh Munikote documented the first public confirmation on this card in April 2026.
+Pad identification and screw-by-screw access: [PCIe capacitor mod guide](https://170th-street.gitbook.io/hx/modifications/pcie-capacitor-mod). Amogh Munikote documented the first public confirmation on this card in April 2026.
 
 ## Why the link sticks at x4
 
@@ -39,15 +39,15 @@ This is a real board-rework job. Flux residue, bridges, and lifted pads will rui
 
 ## High-level steps
 
-1. Complete [teardown](../hardware/teardown.md) far enough to access the empty pads (follow the [Teardown Guide](https://170th-street.gitbook.io/hx/hardware/teardown-guide) for the slide-out / heatsink sequence).
-2. Identify all **24** empty AC coupling positions against the upstream photos / schematic callouts.
+1. Complete [teardown](../hardware/teardown.md) far enough to access the empty pads (slide-out / heatsink sequence on the Teardown page).
+2. Identify all **24** empty AC coupling positions against the mod-guide photos / schematic callouts.
 3. Clean pads, apply flux, place and reflow each **0.22 µF 0402**.
 4. Inspect every joint under magnification. Check for bridges to neighbors and for tombstoned parts.
 5. Clean flux. Reassemble or proceed to waterblock prep.
 6. Boot and verify link width (below).
 
 !!! danger "Dangers"
-    Shorts across a differential pair or to ground will take out lanes or the whole endpoint. Do not probe powered gold fingers with a clumsy iron. Work unpowered, ESD-safe, and confirm continuity only with a plan (the upstream mod guide covers probing guidance). If you are unsure, stop and pay someone who does 0402 daily.
+    Shorts across a differential pair or to ground will take out lanes or the whole endpoint. Do not probe powered gold fingers with a clumsy iron. Work unpowered, ESD-safe, and confirm continuity only with a plan (probing guidance is in the mod guide linked above). If you are unsure, stop and pay someone who does 0402 daily.
 
 ## Verification
 

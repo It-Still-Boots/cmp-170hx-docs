@@ -2,7 +2,7 @@
 
 Closed-loop and block options for putting a CMP 170HX on a desk without a rack full of screamers. Stock cooling is a **passive** server sink. For daily unlocked workloads, plan on water (AIO kit or custom loop) or serious directed airflow ([Air Cooling](air-cooling.md)).
 
-Install warnings and pad procedure still live on [Watercooling Installation](https://170th-street.gitbook.io/hx/modifications/watercooling-installation). Read that before you pull the stock sink.
+Pad photos and screw-by-screw install warnings: [Watercooling Installation](https://170th-street.gitbook.io/hx/modifications/watercooling-installation). Read that before you pull the stock sink.
 
 ## Block summary (community-validated)
 
@@ -23,7 +23,7 @@ Recommended block from community validation:
 
 Performance anecdote from community validation (paraphrased): around **180 W** on a non-FMA FP32 workload, a **360 mm** radiator with fans at minimum speed held roughly **45 °C**. Treat that as a qualitative datapoint, then log your own loop.
 
-Full procedure (pads, power-cable wrestling, backplate spacing with the saved PCIe bracket): [Watercooling Installation](https://170th-street.gitbook.io/hx/modifications/watercooling-installation).
+Pads, power-cable path, and backplate spacing with the saved PCIe bracket are in that install guide.
 
 ## Bykski AIO (FormulaMod)
 
@@ -101,10 +101,8 @@ Treat this as a **240 mm** thermal budget (same caution as the Bykski 240 mm row
 2. Pad every empty footprint the pillars can touch.
 3. Seat the 8-pin / EPS power cable path before you fully torque the block (rigid cables fight a fully screwed plate).
 4. Keep the original PCIe bracket when fitting the backplate for correct spacing.
-5. Pressure-test ≥15 minutes before coolant fill (per the watercooling install guide).
+5. Pressure-test ≥15 minutes before coolant fill.
 6. Recheck pad compression at the block edges after the first heat cycle.
-
-Deep procedure: [Watercooling Installation](https://170th-street.gitbook.io/hx/modifications/watercooling-installation).
 
 ## Related pages
 
