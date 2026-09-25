@@ -1,6 +1,6 @@
 # CMP 170HX Documentation
 
-Documentation for the **NVIDIA CMP 170HX**, a GA100 mining card that the community has turned into a serious budget compute platform. Hardware facts, cooling and power, unlock path, and lab notes from a real unlocked box.
+Documentation for the **NVIDIA CMP 170HX**, a GA100 mining card. This site covers the hardware, cooling, power, the Linux unlock, and decode numbers from one unlocked 64 GiB card.
 
 ## What is the CMP 170HX?
 
@@ -107,7 +107,7 @@ Before you bolt this into a host, treat these as hard gates.
     Passive heatsink needs strong directed airflow, or replace it with water. Thermal runaway above **~80 °C** is a documented failure mode. Dry-run without coolant: power off within **~5 minutes**.
 
 !!! warning "Host BIOS"
-    You need a host that can train a PCIe link to a Gen1 (then Gen2 after unlock) endpoint with Above 4G Decoding enabled for large BAR work. Checklist and setting names: [Host BIOS](bios/host-bios.md).
+    Above 4G Decoding has to be on if you later grow BAR1 past 64 MB. The framebuffer unlock does not require it. Secure Boot has to be off for the patched modules. Checklist and setting names: [Host BIOS](bios/host-bios.md).
 
 !!! warning "Linux + specific open driver"
     Community unlock paths target **nvidia-open 610.43.02 / 610.43.03**, matching kernel headers, root, and Secure Boot off. Pin the driver tree before you chase performance numbers.
@@ -129,7 +129,7 @@ Before you bolt this into a host, treat these as hard gates.
 
 ## Community
 
-This hub points hard at the people who did the reverse engineering.
+The reverse engineering lives in these projects:
 
 - [Consensus-Protocol/cmp170hx wiki](https://github.com/Consensus-Protocol/cmp170hx/wiki)
 - [amoghmunikote/cmpunlocker](https://github.com/amoghmunikote/cmpunlocker) (canonical unlock tool; forks such as [bayley/cmpunlocker](https://github.com/bayley/cmpunlocker) add P2P work)
@@ -151,8 +151,6 @@ More links live on [Community](community/community.md).
 For the step-by-step, see the [Quick Start Guide](getting-started/quick-start.md).
 
 ## References
-
-References and further info from:
 
 - https://170th-street.gitbook.io/hx
 - https://github.com/amoghmunikote/170th-Street

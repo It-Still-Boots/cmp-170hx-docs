@@ -113,8 +113,6 @@ Treat this as a **240 mm** thermal budget (same caution as the Bykski 240 mm row
 
 ## References
 
-References and further info from:
-
 - https://170th-street.gitbook.io/hx/modifications/watercooling-installation
 - https://www.formulamod.com/Bykski-AIO-Cooler-for-NVIDIA-Tesla-A100-40GB-and-A30-p6189666.html
 - https://www.formulamod.com/Bykski-GPU-Block-For-Nvidia-Tesla-A100-40GB-Nvidia-CMP-170HX-Nvidia-Tesla-A30-24G-High-Heat-Resistance-Material-POM-Full-Metal-Construction-With-Backplate-Full-Cover-GPU-Water-Cooling-Cooler-Radiator-Block-N-TESLA-A100-X-V2-p3765067.html

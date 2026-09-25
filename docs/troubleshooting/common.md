@@ -1,6 +1,6 @@
 # Common Issues
 
-Failure modes that show up on unlocked CMP 170HX hosts. Keep cooling honest before you debug software. Each section is symptom → likely cause → first fix.
+Failure modes that show up on unlocked CMP 170HX hosts. Get the card under 80 °C before you debug software. Each section is symptom → likely cause → first fix.
 
 ## Card not seen / wrong PCI ID
 
@@ -80,8 +80,6 @@ On Ubuntu-class hosts, DKMS under `updates/dkms/` often beats `updates/cmpunlock
 - [Water Cooling](../hardware/water-cooling.md)
 
 ## References
-
-References and further info from:
 
 - https://github.com/amoghmunikote/cmpunlocker
 - https://github.com/Consensus-Protocol/cmp170hx/wiki

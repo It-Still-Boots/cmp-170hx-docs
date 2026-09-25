@@ -75,8 +75,6 @@ See [Teardown](teardown.md).
 
 ## References
 
-References and further info from:
-
 - https://170th-street.gitbook.io/hx/hardware/teardown-guide
 - https://170th-street.gitbook.io/hx/hardware/full-specifications
 - https://www.amazon.com.au/dp/B076X11CT6

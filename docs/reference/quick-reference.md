@@ -38,7 +38,7 @@ Compute (Full Specs, both SKUs): **70 SM / 4480 CUDA / 280 tensor**. See [Specif
 | Tool | [amoghmunikote/cmpunlocker](https://github.com/amoghmunikote/cmpunlocker) |
 | Profiles | `--profile=8gb` → 64 GB; `--profile=10gb` → 40 GB |
 | Host firmware | Above 4G **on**, Secure Boot **off** |
-| ReBAR stock | Present, **64 MiB** limit until unlock widens BAR1 |
+| BAR1 stock | **64 MB**. A larger BAR1 is a separate kernel fixup, not the framebuffer unlock |
 
 ## Key commands
 
@@ -73,8 +73,6 @@ sudo lspci -s <bus:dev.fn> -vvv | grep LnkSta
 - [Troubleshooting](../troubleshooting/common.md)
 
 ## References
-
-References and further info from:
 
 - https://170th-street.gitbook.io/hx/introduction/what-is-the-cmp-170hx
 - https://170th-street.gitbook.io/hx/hardware/full-specifications

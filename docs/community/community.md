@@ -18,7 +18,7 @@ Ask questions where the upstream projects already hang out, or open a GitHub iss
 ## How to contribute to these docs
 
 1. Fork [It-Still-Boots/cmp-170hx-docs](https://github.com/It-Still-Boots/cmp-170hx-docs).
-2. Edit Markdown under `docs/`. Keep the lab-note voice: concrete numbers, full sentences, no marketing filler.
+2. Edit Markdown under `docs/`. Use concrete numbers and full sentences.
 3. Run `mkdocs build --strict` locally before you open a PR.
 4. Attribute upstream when you paraphrase the hardware guides, cmpunlocker, or the Consensus wiki. Do not paste walls of GitBook.
 5. If a step is not verified in these docs, say so and link the upstream procedure.
@@ -38,8 +38,6 @@ Useful PRs: BIOS menu paths for specific boards, verified `LnkSta` before/after 
 - This docs repo: [It-Still-Boots/cmp-170hx-docs](https://github.com/It-Still-Boots/cmp-170hx-docs)
 
 ## References
-
-References and further info from:
 
 - https://170th-street.gitbook.io/hx
 - https://github.com/amoghmunikote/170th-Street

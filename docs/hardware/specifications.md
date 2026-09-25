@@ -73,10 +73,10 @@ From the Full Specs performance table (paraphrased; see source for raw rows):
 |--------|-------------------|------------------|
 | FP32 | ~0.41 TFLOPS | ~12.99 TFLOPS |
 | FP64 | ~0.19 TFLOPS | ~6.44 TFLOPS |
-| FP16 | ~49.05 TFLOPS | ~49.05 TFLOPS (table shows same) |
+| FP16 | ~49.05 TFLOPS | ~49.05 TFLOPS |
 | INT8 | ~1.64 TFLOPS | ~48.03 TFLOPS |
 
-Lab prose often summarizes stock FP32 FMA as the **~0.39–0.41 TFLOPS** class and unlocked FP32 as the **~12–13 TFLOPS** class. Cross-check your own OpenCL/CUDA microbench before publishing.
+Stock FP32 FMA is about **0.39–0.41 TFLOPS**. Unlocked FP32 is about **12–13 TFLOPS**.
 
 PCB note: reference designators match the A100 40GB PCIe family closely enough that A100 schematics and waterblocks are useful (see [Teardown](teardown.md) and [Water Cooling](water-cooling.md)).
 
@@ -130,8 +130,6 @@ See [Power](power.md).
 - [Quick Start](../getting-started/quick-start.md)
 
 ## References
-
-References and further info from:
 
 - https://170th-street.gitbook.io/hx/hardware/full-specifications
 - https://170th-street.gitbook.io/hx/introduction/what-is-the-cmp-170hx

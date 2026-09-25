@@ -1,6 +1,6 @@
 # Unlock Overview
 
-Lab runbook for taking a stock CMP 170HX to unlocked HBM and usable SM throughput on Linux. Mechanism detail (Falcon, Booter, ROP chain, register tables) lives on the [Consensus-Protocol/cmp170hx wiki](https://github.com/Consensus-Protocol/cmp170hx/wiki). This hub does not rewrite that bible here.
+Lab runbook for taking a stock CMP 170HX to unlocked HBM and usable SM throughput on Linux. Mechanism detail (Falcon, Booter, ROP chain, register tables) lives on the [Consensus-Protocol/cmp170hx wiki](https://github.com/Consensus-Protocol/cmp170hx/wiki). This page does not repeat those register tables.
 
 Canonical installer: [amoghmunikote/cmpunlocker](https://github.com/amoghmunikote/cmpunlocker). Related fork with extra P2P work: [bayley/cmpunlocker](https://github.com/bayley/cmpunlocker).
 
@@ -13,7 +13,7 @@ Patched **nvidia-open** kernel modules reconfigure the GPU during GSP boot. Noth
 | Memory geometry | **8 GB** stock (`0x20C2`) → **64 GB** unlocked; **10 GB** stock (`0x2082`) → **40 GB** unlocked |
 | SM / FP32 FMA throttle | Stock **~0.39–0.41 TFLOPS** class FP32 climbs toward **~12–13 TFLOPS** unlocked (measure your own card) |
 | PCIe Gen | Software path to **Gen2** (5.0 GT/s) when the build includes Gen2 patches |
-| BAR1 | Widened toward full VRAM mapping (needs host [Above 4G Decoding](../bios/host-bios.md)) |
+| BAR1 | Stays **64 MB** on a normal unlock. Growing it toward 64 GB needs Above 4G plus an early kernel fixup. See [Host BIOS](../bios/host-bios.md). |
 | Persistence | Survives reboot as long as the patched modules stay preferred by the module loader |
 
 Capacity is per SKU. An 80 GB profile on 10 GB cards was built, tested, and rejected as unstable by community wiki consensus.
@@ -84,8 +84,6 @@ Falcon privilege masks, Booter PLM sequences, ROP gadget layout, and per-registe
 - [Quick Reference](../reference/quick-reference.md)
 
 ## References
-
-References and further info from:
 
 - https://github.com/amoghmunikote/cmpunlocker
 - https://github.com/bayley/cmpunlocker

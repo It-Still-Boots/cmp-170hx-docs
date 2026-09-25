@@ -9,9 +9,8 @@ Public MkDocs Material documentation for the **NVIDIA CMP 170HX** as used in the
 
 | Section | Status |
 |---------|--------|
-| Home, Getting Started, Hardware | Full first-pass drafts |
-| Modifications, BIOS & Host, Linux & Unlock, Performance, Troubleshooting, Reference | Stubs with TODOs / upstream links |
-| Community | Stub with canonical upstream links |
+| Home, Getting Started, Hardware, BIOS, Unlock, Performance, Troubleshooting, Reference | Written |
+| Community | Links to the upstream projects |
 
 Upstream hardware and unlock detail is attributed to [170th Street](https://170th-street.gitbook.io/hx), [cmpunlocker](https://github.com/amoghmunikote/cmpunlocker), and [Consensus-Protocol/cmp170hx](https://github.com/Consensus-Protocol/cmp170hx).
 

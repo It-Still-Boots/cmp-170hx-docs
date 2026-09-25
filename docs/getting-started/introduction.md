@@ -57,7 +57,7 @@ With cmpunlocker installed on a matching open driver:
 - Memory reports **65536 MiB** (8 GB SKU) or **40960 MiB** (10 GB SKU)
 - SM compute throttle lifts (SS0/SS1 path in community tooling)
 - PCIe Gen2 becomes available in software
-- CUDA and OpenCL workloads stop looking like a 2008 GPU
+- CUDA and OpenCL workloads leave the stock ~0.4 TFLOPS FP32 rate
 
 Lab headline on unlocked **~64 GB** HBM: Nemotron-3.5-Lightning-30B-A3B W4A16 at **228 tok/s** (16k coding), batch **1,306 tok/s** aggregate at 32k×16, and **79%** decode retained at 128k versus 1k. Earlier Qwen3.8-27B DFlash ~212 tok/s remains in the matrix. Full tables and method live on [Performance Overview](../performance/overview.md).
 
@@ -84,7 +84,7 @@ Harder fit if you need Windows gaming APIs, plug-and-play enterprise support, NV
     Empty IC footprints on the PCB must get thermal pads before a waterblock goes on. Metal pillars can short bare copper. See [Water Cooling](../hardware/water-cooling.md) (and [Air Cooling](../hardware/air-cooling.md) for forced-air bring-up).
 
 !!! info "SKU traps when buying"
-    Verify PCI IDs on a stock driver before you pay. A100 device IDs differ (`20b0` / `20b2` / `20b5` / `20f1` class). SM count and Gen1-class PCIe are honest tells on an unpatched host. ServeTheHome's [unlocked measurements thread](https://forums.servethehome.com/index.php?threads/cmp-170hx-unlocked-and-measured-164-tflops-fp16-64gb-verified-and-how-to-tell-one-from-an-a100.56137/) has a practical comparison table.
+    Verify PCI IDs on a stock driver before you pay. A100 device IDs differ (`20b0` / `20b2` / `20b5` / `20f1` class). On an unpatched host the link is Gen1 x4 and the SM count stays at 70. ServeTheHome's [unlocked measurements thread](https://forums.servethehome.com/index.php?threads/cmp-170hx-unlocked-and-measured-164-tflops-fp16-64gb-verified-and-how-to-tell-one-from-an-a100.56137/) has a practical comparison table.
 
 ## What's next
 
@@ -94,8 +94,6 @@ Harder fit if you need Windows gaming APIs, plug-and-play enterprise support, NV
 - [Unlock Overview](../linux-unlock/unlock-overview.md) once the card is cool and identified
 
 ## References
-
-References and further info from:
 
 - https://170th-street.gitbook.io/hx
 - https://170th-street.gitbook.io/hx/introduction/what-is-the-cmp-170hx

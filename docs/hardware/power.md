@@ -1,6 +1,6 @@
 # Power Requirements
 
-How to feed a CMP 170HX without melting an adapter or brown-outing a mid tower PSU. Numbers below come from Full Specs and community unlock docs; treat wall-meter readings from your own chassis as ground truth.
+Power feed for a CMP 170HX. The watt figures are the published TDP and the software cap. Meter your own wall draw under load.
 
 Sources: [Full Specifications](https://170th-street.gitbook.io/hx/hardware/full-specifications), [Consensus-Protocol/cmp170hx](https://github.com/Consensus-Protocol/cmp170hx).
 
@@ -36,7 +36,7 @@ Practical floors when shopping used PSUs:
 Idle is friendly (~30–40 W on the GPU). Sustained unlocked FP32 / LLM decode is where the 250–300 W band shows up. Meter the wall once during a long generate job and write the number next to your Performance entry.
 
 !!! tip "Software limit vs heatsink"
-    Raising the power limit toward **300 W** without proving cooling first is how you meet the thermal runaway warning on [Air Cooling](air-cooling.md) / [Water Cooling](water-cooling.md). Leave the limit at default until temperatures are boring.
+    Raising the power limit toward **300 W** without proving cooling first is how you meet the thermal runaway warning on [Air Cooling](air-cooling.md) / [Water Cooling](water-cooling.md). Leave the limit at 250 W until the card holds a steady temperature under load.
 
 ## Cabling checklist
 
@@ -68,8 +68,6 @@ Each additional 170HX adds another ~250–300 W planning chunk and another EPS f
 - [Quick Start](../getting-started/quick-start.md)
 
 ## References
-
-References and further info from:
 
 - https://170th-street.gitbook.io/hx/hardware/full-specifications
 - https://github.com/Consensus-Protocol/cmp170hx

@@ -76,8 +76,6 @@ Community validation on this card moved width from x4 to x16 at Gen1. Gen2 remai
 
 ## References
 
-References and further info from:
-
 - https://170th-street.gitbook.io/hx/modifications/pcie-capacitor-mod
 - https://github.com/amoghmunikote/170th-Street/blob/master/modifications/pcie-capacitor-mod.md
 - https://170th-street.gitbook.io/hx

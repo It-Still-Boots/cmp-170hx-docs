@@ -19,7 +19,7 @@ Bring a known-good x86 Linux box to the meetup if you can run `lspci` before cas
 
 Minimum useful host:
 
-- PCIe x16 mechanical slot (electrical x4 is fine at stock; capacitor mod wants all sixteen traces intact on the card)
+- PCIe x16 mechanical slot (stock still trains x4. Use an x16 slot so the link can go wider after the AC-coupling capacitors are fitted)
 - UEFI firmware with **Above 4G Decoding**
 - Ability to disable **Secure Boot**
 - Enough chassis airflow for a dual-slot passive brick, or room for a GPU waterblock and radiator
@@ -170,11 +170,9 @@ Install after drivers load:
 2. [Introduction](introduction.md) if you still need the SKU story
 3. [Specifications](../hardware/specifications.md) when you write purchase notes or bench headers
 
-**Lab tip:** Order cooling parts in the same cart as the card. The passive sink is honest about its design target: a screaming server aisle with directed airflow.
+**Lab tip:** Order cooling with the card. The stock heatsink is a passive server part and needs directed airflow.
 
 ## References
-
-References and further info from:
 
 - https://170th-street.gitbook.io/hx/hardware/full-specifications
 - https://170th-street.gitbook.io/hx/hardware/teardown-guide

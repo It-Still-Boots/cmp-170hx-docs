@@ -35,9 +35,9 @@ Subsystem checks: `1585` (8 GB) and `1557` (10 GB) per Full Specs.
 
 Boot the host firmware and set:
 
-- **Above 4G Decoding:** Enabled (needed for large BAR / full VRAM mapping work)
+- **Above 4G Decoding:** Enabled. Needed to map a BAR1 larger than 64 MB. The 64 GB / 40 GB framebuffer size does not depend on it.
 - **Secure Boot:** Disabled (patched unlock modules are unsigned)
-- **Resizable BAR / Re-BAR:** Enable if present; stock card still advertises a **64 MiB** limit until unlock tooling widens BAR behavior
+- **Resizable BAR / Re-BAR:** Enable if the option is there. Stock BAR1 stays 64 MB until a kernel fixup programs it before PCI enumeration.
 - **PCIe slot:** Prefer a full x16 mechanical slot even though stock trains at x4
 
 Exact menu names vary by vendor. Capture them on [Host BIOS](../bios/host-bios.md) as you learn your board.
@@ -75,7 +75,7 @@ Install your distro, then the matching open driver package set. Freeze or snapsh
 
 ### Step 5: Stock sanity check
 
-Before unlocking, confirm the card looks honest:
+Before unlocking, record the stock state:
 
 ```bash
 nvidia-smi
@@ -86,7 +86,7 @@ Expect roughly:
 
 - Memory: **8192 MiB** or **10240 MiB**
 - Link: Speed **2.5 GT/s**, Width **x4**
-- Idle board power in the **~30–40 W** neighborhood when cool and idle
+- Idle board power about **30–40 W** when the card is cool
 
 If you already see 40–64 GB on a “stock” driver, someone unlocked this host earlier. Document that before you overwrite modules.
 
@@ -106,7 +106,7 @@ Then perform a **cold reboot** (full power off, then boot).
 !!! tip "DKMS priority trap (Ubuntu-class hosts)"
     ServeTheHome forum reports: stock DKMS modules under `updates/dkms/` can win over `updates/cmpunlocker/`. If `nvidia-smi` still shows 8192 MiB after a “successful” install, check `modinfo -n nvidia` and add an explicit depmod override pointing at `updates/cmpunlocker`. Details: [Troubleshooting](../troubleshooting/common.md).
 
-Deep mechanism docs: [Consensus-Protocol/cmp170hx wiki](https://github.com/Consensus-Protocol/cmp170hx/wiki). This hub does not rewrite the Falcon / ROP bible here.
+Deep mechanism docs: [Consensus-Protocol/cmp170hx wiki](https://github.com/Consensus-Protocol/cmp170hx/wiki). Register-level detail stays on that wiki.
 
 **Difficulty:** Medium–Hard
 
@@ -120,7 +120,7 @@ sudo lspci -s <bus:dev.fn> -vvv | grep LnkSta
 Success looks like:
 
 - Memory: **65536 MiB** (8 GB SKU) or **40960 MiB** (10 GB SKU)
-- Link speed: Gen2-class (**5.0 GT/s**) once Gen2 unlock is in your cmpunlocker build
+- Link speed: **5.0 GT/s** when that cmpunlocker build includes Gen2
 - Width: still **x4** until you complete the capacitor mod
 
 Optional compute sniff test: a short CUDA or OpenCL FP32 probe should leave the **~0.4 TFLOPS** stock FMA class and move toward the **~12–13 TFLOPS** unlocked class. Keep the probe short until cooling is proven.
@@ -138,7 +138,7 @@ Only after unlock verification:
 
 ### Step 9: Run a real workload
 
-Point your LLM stack at the unlocked device. Lab headline: Nemotron W4A16 **228 tok/s** (16k coding), batch **1,306 tok/s**, **79%** retained at 128k; earlier Qwen3.8-27B DFlash ~212 tok/s sits in the matrix. Do not invent CSVs here; see [Performance](../performance/overview.md).
+Point an LLM server at the unlocked device. Measured on this card: Nemotron W4A16 **228 tok/s** (16k coding), **1,306 tok/s** aggregate at 16 streams and 32k, **79%** of the 1k decode rate at 128k. Tables: [Performance](../performance/overview.md).
 
 ---
 
@@ -172,8 +172,6 @@ Point your LLM stack at the unlocked device. Lab headline: Nemotron W4A16 **228 
 4. Drop numbers into [Performance](../performance/overview.md) when the lab run is reproducible
 
 ## References
-
-References and further info from:
 
 - https://github.com/amoghmunikote/cmpunlocker
 - https://github.com/Consensus-Protocol/cmp170hx/wiki

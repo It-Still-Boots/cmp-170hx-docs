@@ -61,8 +61,6 @@ For torque sense, photos, and the video embeds, open the Teardown Guide linked a
 
 ## References
 
-References and further info from:
-
 - https://170th-street.gitbook.io/hx/hardware/teardown-guide
 - https://github.com/amoghmunikote/170th-Street
 - https://170th-street.gitbook.io/hx/modifications/watercooling-installation

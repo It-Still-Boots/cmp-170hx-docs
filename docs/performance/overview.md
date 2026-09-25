@@ -17,12 +17,14 @@ Lab decode numbers from an unlocked **CMP 170HX** (64 GiB HBM2e, ~1.49 TB/s, PCI
 
 ## What to run
 
-| Job | Model | Engine | 16k | 64k |
-|-----|-------|--------|-----|-----|
-| Interactive | Nemotron-3.5-Lightning-30B-A3B W4A16 | vLLM | 228 tok/s, 1.7 s TTFT | 218 tok/s, 7.8 s TTFT |
-| Fast MoE | Ornith-1.5-35B-A3B W4A16 | SGLang | 155 tok/s, 1.3 s TTFT | 142 tok/s, 7.8 s TTFT |
-| Batch at 16k | Qwen3.8-27B W4A16-fast | vLLM | 602 tok/s at 32 streams | See 16k concurrency |
-| Batch at 32k | Nemotron-3.5-Lightning-30B-A3B W4A16 | vLLM | 1,306 tok/s at 16 streams | n=32 does not fill (17 running). Ornith MoE peaks at 270 tok/s at n=2. |
+| Job | Model | Engine | 16k | 32k | 64k |
+|-----|-------|--------|-----|-----|-----|
+| Interactive | Nemotron-3.5-Lightning-30B-A3B W4A16 | vLLM | 228 tok/s, 1.7 s TTFT | | 218 tok/s, 7.8 s TTFT |
+| Fast MoE | Ornith-1.5-35B-A3B W4A16 | SGLang | 155 tok/s, 1.3 s TTFT | | 142 tok/s, 7.8 s TTFT |
+| Batch | Qwen3.8-27B W4A16-fast | vLLM | 602 tok/s, 32 streams | | |
+| Batch | Nemotron-3.5-Lightning-30B-A3B W4A16 | vLLM | | 1,306 tok/s, 16 streams | n=32 did not fill (17 running) |
+
+Ornith at 32k on SGLang peaks at 270 tok/s with two streams.
 
 ## Coding and long-context generation
 
@@ -54,7 +56,7 @@ Decode against prompt depth with speculation off. The chart shows the three fast
 | 65,536 | 88.1% | 75 |
 | 131,072 | 79.4% | 56 |
 
-The drop stays small through 16k and shows up past 64k. 64 GiB is what keeps 128k usable: a 27B model holds about 8 GiB of KV there, which does not fit next to the weights on a 24 GB card.
+Median decode is 96.2% of the 1k rate at 16k and 79.4% at 128k.
 
 ## Power limit
 
@@ -87,7 +89,7 @@ Compact Qwen3.8-27B 4-bit row at 16k for engine orientation: llama.cpp 36.8, vLL
 
 ## Speculative decoding
 
-Median gain over the same configuration with speculation off, by depth. Values come from the bench JSON (`D.spec`), which fills the broken `{:.2f}` placeholders in the HTML export.
+Median gain over the same configuration with speculation off, by depth.
 
 ![Median speedup for DFlash, MTP, and DSpark versus prompt depth from 1k to 128k.](../assets/performance/spec-speedup.png)
 
@@ -99,11 +101,11 @@ Median gain over the same configuration with speculation off, by depth. Values c
 | MTP | 1.88× | 1.90× | 1.61× | 1.42× | 1.28× | 0.76× |
 | DSpark | 2.06× | 2.11× | 1.53× | 1.43× | 1.52× | 1.40× |
 
-DFlash is 2.22× at 1k and 1.22× at 128k. MTP falls to 0.76× at 128k, where the drafter costs more than it returns. Quote a speculative number at the depth you actually use.
+DFlash is 2.22× at 1k and 1.22× at 128k. MTP is 0.76× at 128k, so the drafter costs more than it returns at that depth.
 
 ## Concurrent decode (workload)
 
-256-token outputs. Quote 16k and 32k for real work. Empty-cache 1k/4k tables can print 3,168 tok/s on Ornith; that figure is 1k-only. At 32k the same model peaks at 270 tok/s with two streams.
+256-token outputs. The long-prompt numbers are the 16k and 32k tables. Ornith-1.5-35B W4A16 reaches 3,168 tok/s at 64 streams and 1k. At 32k the same model peaks at 270 tok/s with two streams.
 
 ![Aggregate decode versus concurrent stream count for Nemotron 32k vLLM, Ornith 32k SGLang, and Qwen 27B 16k vLLM.](../assets/performance/concurrency-agg.png)
 
@@ -130,6 +132,8 @@ Ornith 32k on SGLang peaks at **270 tok/s aggregate at n=2**, then falls as wait
 | GSM8K strict | 1,319 | 0.532 | 0.532 | 0.444 | −16.4% |
 | IFEval inst strict | 541 | 0.447 | 0.448 | 0.446 | −0.3% |
 
+W4A16 loses 1.3 points of HumanEval pass@1 and 8.7 points of GSM8K strict-match. Flexible-extract, which accepts the number anywhere in the answer, moves about 1.5 points. The GSM8K and HumanEval+ levels come from few-shot completion prompts built for base models, so they sit below a direct chat prompt. The gap between the three quants is the comparison.
+
 ## Method
 
 - One CMP 170HX, blower on a temperature-driven curve. Runs without it were discarded.
@@ -152,8 +156,6 @@ Community reports and tools on [Localmaxxing](https://www.localmaxxing.com/en/re
 Optional stack-comparison context from the same reports index on dual **RTX 3090 TP2** (separate hardware from this 170HX lab): MTP vs DFlash, and vLLM vs SGLang DFlash2.
 
 ## References
-
-References and further info from:
 
 - https://www.localmaxxing.com/en/reports
 - https://www.localmaxxing.com/en/hardware
