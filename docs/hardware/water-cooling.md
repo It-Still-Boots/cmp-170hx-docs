@@ -1,6 +1,6 @@
 # Water Cooling
 
-Closed-loop and block options for putting a CMP 170HX on a desk without a rack full of screamers. Stock cooling is a **passive** server sink. For daily unlocked workloads, plan on water (AIO kit or custom loop) or serious directed airflow ([Air Cooling](air-cooling.md)).
+Waterblocks and AIO kits for a CMP 170HX. Stock cooling is a **passive** server sink. For a daily unlocked workload, use water or directed airflow ([Air Cooling](air-cooling.md)).
 
 Pad photos and screw-by-screw install warnings: [Watercooling Installation](https://170th-street.gitbook.io/hx/modifications/watercooling-installation). Read that before you pull the stock sink.
 
@@ -21,7 +21,7 @@ Recommended block from community validation:
 !!! warning "Thermal runaway"
     GA100 leakage climbs with temperature. Dry-run without coolant only for a short bring-up, then power off within about **five minutes**. Treat temperatures above **~80 °C** as an emergency stop.
 
-Performance anecdote from community validation (paraphrased): around **180 W** on a non-FMA FP32 workload, a **360 mm** radiator with fans at minimum speed held roughly **45 °C**. Treat that as a qualitative datapoint, then log your own loop.
+One community report: about **180 W** on a non-FMA FP32 workload, a **360 mm** radiator with fans at minimum speed held about **45 °C**. Log your own loop under the workload you actually run.
 
 Pads, power-cable path, and backplate spacing with the saved PCIe bracket are in that install guide.
 

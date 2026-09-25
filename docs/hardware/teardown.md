@@ -1,6 +1,6 @@
 # Teardown
 
-Summary of what a CMP 170HX teardown involves. This page does **not** invent screw counts or motion paths beyond the linked procedure.
+Summary of a CMP 170HX teardown. Screw counts and the motion of the board come from the linked guide.
 
 **Step-by-step with photos:** [Teardown Guide](https://170th-street.gitbook.io/hx/hardware/teardown-guide) · [GitHub mirror](https://github.com/amoghmunikote/170th-Street)
 
